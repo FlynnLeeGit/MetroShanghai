@@ -1,0 +1,45 @@
+$line-color: rgb(204,0,0) rgb(0,153,0) rgb(255,255,0) rgb(102,0,102) rgb(204,0,204) rgb(255,51,102) rgb(205,114,0) rgb(0,102,204) rgb(149,211,219) rgb(192,168,209) rgb(128,0,0) rgb(0,124,101) rgb(239,129,197);
+$line16: rgb(146,206,194);
+$white: #fff;
+.line-number {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1em;
+  height: 1em;
+  color: #fff;
+  padding: 0.2em;
+}
+@for $i from 1 through 13 {
+  .line-#{$i} {
+    @if $i==1 or $i==4 or $i==11 or $i==12 {
+      color: $white;
+    }
+    background: nth($line-color,$i);
+  }
+  .line-font-#{$i} {
+    @if $i==3 {
+      color: darken(nth($line-color,3), 10%);
+    }
+    @else {
+      color: nth($line-color,$i) !important;
+    }
+  }
+  .line-node-#{$i}{
+    //  box-shadow:0 0 0 .2em nth($line-color,$i) inset;
+     border:0.2em solid nth($line-color,$i);
+  }
+}
+
+.line-16{
+  background: $line16;
+}
+.line-font-16{
+  color: $line16;
+}
+.line-node-16{
+  // box-shadow:0 0 0 0.2em $line16 inset;
+  border: 0.2em solid $line16;
+}
