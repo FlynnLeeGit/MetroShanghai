@@ -181,12 +181,11 @@ class StationWrapper extends React.Component {
 
     render() {
       this.initConfig();
-
       return (
         <div
           style={{
             left: this.state.left,
-            top: this.state.top
+            top: this.state.top,
           }}
           className='station-wrapper fadein'>
           <StationNode

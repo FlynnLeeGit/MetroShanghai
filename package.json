@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "webpack-dev-server --progress --colors --hot --inline",
-    "build": "webpack --progress --colors --profile --watch  --minify"
+    "build": "webpack --progress --colors --profile --watch"
   },
   "keywords": [],
   "author": "",

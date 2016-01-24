@@ -36,6 +36,9 @@ class TimePanel extends React.Component {
 
     e.preventDefault();
   }
+ handleDeleteTime(e){
+   e.preventDefault();
+ }
 
   initSelectOption() {
     let s = this.props.sData;
@@ -97,7 +100,7 @@ class TimePanel extends React.Component {
           <td>{t[2]}
             分钟</td>
           <td>
-            <button className='btn btn-sm btn-danger'>删除</button>
+            <button onClick={e=>this.handleDeleteTime(e)} className='btn btn-sm btn-danger'>删除</button>
           </td>
         </tr>
       );

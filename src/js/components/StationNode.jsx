@@ -18,6 +18,7 @@ class StationNode extends React.Component {
           borderColor:this.props.nodeType=='transfer'?'#000':'',
           transform:`translate(-50%,-50%) rotate(${this.props.nodeAngel}deg)`,
           WebkitTransform:`translate(-50%,-50%) rotate(${this.props.nodeAngel}deg)`,
+          zIndex:this.props.pathNode||this.props.selected?4:3,
         }}
         onClick={this.props.handleClick}
         onContextMenu={this.props.handleContextMenu}

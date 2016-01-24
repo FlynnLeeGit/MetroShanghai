@@ -5,28 +5,7 @@ class EditPanel extends React.Component {
   constructor(props) {
     super(props);
   }
-
-
-  initTimeData() {
-    if (this.props.time) { //time有定义 因为异步加载的问题此处可能是undefined 所以要判断下
-      this.timeList = this.props.time.map((timeSingle, index) => {
-        return (
-          <div key={index}>
-
-            <div className='input-group'>
-              <span className='input-group-addon'>
-                  到{timeSingle.next}号站点时间
-              </span>
-              <span className='input-group-addon'>{timeSingle.value}分钟</span>
-            </div>
-          </div>
-        );
-      })
-    }
-  }
-
   render() {
-    this.initTimeData();
     if (!this.props.visible) {
       return null;
     } else {
@@ -209,7 +188,6 @@ class EditPanel extends React.Component {
                   </div>
 
 
-                  {this.timeList}
                   <div className='btn-group pull-left'>
                     <button
                       onClick={this.props.onEditDelete}

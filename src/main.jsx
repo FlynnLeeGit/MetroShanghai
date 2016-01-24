@@ -82,7 +82,7 @@ class Main extends React.Component {
           this.setState({
             maxRender: this.state.maxRender + 20
           })
-        }, 0);
+        }, 1);
   }
   initStationsData() {
     ajax.stationGet((result) => {

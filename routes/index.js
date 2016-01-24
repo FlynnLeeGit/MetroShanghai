@@ -84,11 +84,10 @@ router.route('/time')
 })
 
 .put(function(req, res, next) {
-  console.log(req.body);
-  model.time.create(req.body, function(err, data) {
-    if (err) throw err;
-    res.json(data);
-  })
+      model.time.create(req.body, function(err, data) {
+        if (err) throw err;
+        res.json(data);
+      })
 })
 .delete(function(req, res, next) {
   model.time.find({
