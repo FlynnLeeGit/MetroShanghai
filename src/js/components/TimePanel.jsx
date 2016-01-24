@@ -2,39 +2,66 @@ import React from 'react';
 import ajax from '../ajax';
 import LineSelect from './LineSelect.jsx';
 
-
 class TimePanel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       uniquekey_id: 0,
       next: 0,
-      value:0,
-      selectOption:{},
+      value: 0,
+      selectedStartLine: 1,
+      selectedEndLine: 1
     }
-  }
- componentDidMount() {
-   ajax.selectGet((data)=>{
-     this.setState({selectOption:data})
-   })
- }
-  handleSubmit(e) {
-    e.preventDefault();
-
-    let res1 = this.props.idMap[this.state.uniquekey_id]; //寻找起点数据索引
-    let res2 = this.props.idMap[this.state.next]; //寻找终点数据索引
-    console.log(res1, res2);
-
-    ajax.timePut(this.state, (result) => {
-      console.log(result);
-      this.props.updateTime();
-    })
   }
 
   handleChange(e) {
     this.setState({
       [e.target.name]: e.target.value
     })
+    console.log(e.target.name, e.target.value);
+  }
+
+  handleSubmit(e) {
+    let [start,
+      next,
+      value] = [this.refs.start.value, this.refs.next.value, this.refs.value.value];
+
+    ajax.timePut({
+      uniquekey_id: start,
+      next: next,
+      value: value
+    }, (result) => {
+      this.props.updateTime();
+    })
+
+    e.preventDefault();
+  }
+
+  initSelectOption() {
+    let s = this.props.sData;
+    let _sList = {};
+    let _lList = [];
+    //生成以线路号为键名的对象
+    for (var k in s) {
+      if (!_sList[s[k].line]) {
+        _sList[s[k].line] = [];
+        _lList.push(s[k].line); //加入线路数组中
+      }
+      _sList[s[k].line].push(s[k]); //将站点信息加入以线路为键名的对象中
+    }
+
+    this.lineList = _lList.map((_line) => {
+      return <option key={_line} value={_line} className={`line-font-${_line}`}>{_line}号线</option>
+    })
+
+    this.lineStartStations = _sList[this.state.selectedStartLine].map((station) => {
+      return <option key={station.uniquekey} value={station.uniquekey}>{station.chsName}</option>
+    });
+
+    this.lineEndStations = _sList[this.state.selectedEndLine].map((station) => {
+      return <option key={station.uniquekey} value={station.uniquekey}>{station.chsName}</option>
+    });
+
   }
 
   initTimeList() {
@@ -69,30 +96,20 @@ class TimePanel extends React.Component {
           </td>
           <td>{t[2]}
             分钟</td>
+          <td>
+            <button className='btn btn-sm btn-danger'>删除</button>
+          </td>
         </tr>
       );
     })
-  }
-
-  initSelectOption(){
-    let oData=this.state.selectOption;
-    console.log(oData);
-    let ls=[];
-    if(oData){
-      for(let k in oData){
-        ls.push[<option value={k}>k</option>]
-        console.log(ls);
-      }
-    }
-
   }
 
   render() {
     if (!this.props.visible) {
       return null;
     } else {
-      this.initTimeList();
       this.initSelectOption();
+      this.initTimeList();
 
       return (
         <div className='modal-layer add-panel-layer'>
@@ -103,26 +120,37 @@ class TimePanel extends React.Component {
               </h3>
             </div>
 
+            <div className='row' style={{
+              marginTop: '10px'
+            }}>
+              <form onSubmit={e => this.handleSubmit(e)}>
+                <div className='col-xs-1'>起始</div>
+                <div className='col-xs-3'>
+                  <select name='selectedStartLine' onChange={e => this.handleChange(e)} className='form-control' defaultValue={this.state.selectedStartLine}>
+                    {this.lineList}
+                  </select>
+                  <select ref='start' name='uniquekey_id' onChange={e => this.handleChange(e)} className='form-control' defaultValue={this.lineStartStations[0].uniquekey}>
+                    {this.lineStartStations}
+                  </select>
+                </div>
+                <div className='col-xs-1'>邻站</div>
+                <div className='col-xs-3'>
+                  <select name='selectedEndLine' onChange={e => this.handleChange(e)} className='form-control' defaultValue={this.state.selectedEndLine}>
+                    {this.lineList}
+                  </select>
+                  <select ref='next' name='next' onChange={e => this.handleChange(e)} className='form-control' defaultValue={this.lineEndStations[0].uniquekey}>
+                    {this.lineEndStations}
+                  </select>
 
-            <div className='row' style={{marginTop:'10px'}}>
-              <div className='col-xs-3 col-xs-offset-1'>
-                <select name='uniquekey_id'>
-                  {this.ls}
-                </select>
-              </div>
-              <div className='col-xs-3'>
-                <select>
-                  <option>2</option>
-                </select>
-              </div>
-              <div className='col-xs-3'>
-                <input onChange={(e) => this.handleChange(e)} name='value' className='form-control input-sm' type='text' placeholder='输入时间' required/>
-              </div>
-              <div className='col-xs-2'>
-                <button onClick={e => this.handleSubmit(e)} className='btn btn-info btn-sm'>插入</button>
-              </div>
+                </div>
+                <div className='col-xs-2'>
+                  <input ref='value' onChange={(e) => this.handleChange(e)} type ='number' name='value' className='form-control input-sm' placeholder='时间' required/>
+                </div>
+                <div className='col-xs-2'>
+                  <button type='submit' className='btn btn-info btn-sm'>插入</button>
+                </div>
+              </form>
             </div>
-
 
             <div className="panel-body" style={{
               height: '80%',
@@ -138,12 +166,11 @@ class TimePanel extends React.Component {
                       <th>邻站号</th>
                       <th>终止名</th>
                       <th>所需时间</th>
+                      <th>操作</th>
                     </tr>
                   </thead>
                   <tbody>
-
                     {this.timeList}
-
                   </tbody>
                 </table>
 

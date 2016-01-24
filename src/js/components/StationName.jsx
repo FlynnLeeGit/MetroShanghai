@@ -47,14 +47,19 @@ class StationName extends React.Component {
       })
     }
   }
+  componentDidMount() {
+
+  }
   render() {
     if(!Number(this.props.nameVisible)){
       return null;
     }else{
       let style={left:this.state.nameLeft,top:this.state.nameTop,
-        transform:`rotate(${this.state.nameAngel}deg)`};
+        transform:`rotate(${this.state.nameAngel}deg)`,
+        WebkitTransform:`rotate(${this.state.nameAngel}deg)`}
         return (
           <div
+            ref='name'
             className='s-name-area'
             draggable='true'
             style={style}

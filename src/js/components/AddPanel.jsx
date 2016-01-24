@@ -5,12 +5,7 @@ class EditPanel extends React.Component {
     super(props);
   }
   handleConfirm(e){
-
-
-    // e.preventDefault();
-    // this.refs.addForm.submit();
     this.props.onConfirmBtn(e);
-
   }
   render() {
 

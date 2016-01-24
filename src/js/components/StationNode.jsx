@@ -5,21 +5,19 @@ class StationNode extends React.Component {
     super(props);
   }
  onNodeDragStart(e){
+   e.dataTransfer.setData('Text','node');
     e.dataTransfer.setDragImage(this.refs.null,0,0);  //设置默认的浏览器样式不可见，拖动一个无宽高的元素
  }
-
   render() {
     let stationNodeClass = `s-node s-${this.props.nodeType=='normal'?'round':'ellipse'} line-node-${this.props.line}`;
-    let transfromStyle=`translateX(-50%) translateY(-50%) rotateZ(${this.props.nodeAngel}deg)`;
     return (
       <div
         ref='node'
         className={stationNodeClass}
         style={{
           borderColor:this.props.nodeType=='transfer'?'#000':'',
-          transform:transfromStyle,
-          MozTransform:transfromStyle,
-          WebkitTransfrom:transfromStyle,
+          transform:`translate(-50%,-50%) rotate(${this.props.nodeAngel}deg)`,
+          WebkitTransform:`translate(-50%,-50%) rotate(${this.props.nodeAngel}deg)`,
         }}
         onClick={this.props.handleClick}
         onContextMenu={this.props.handleContextMenu}

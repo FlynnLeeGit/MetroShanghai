@@ -35,7 +35,6 @@ class StationWrapper extends React.Component {
     let shouldRender=!(res && res2); //返回false表示有不同的属性值，需要重新渲染
     return shouldRender;
   }
-
   onNodeDrag(e) {
     let [x,
       y] = [e.pageX, e.pageY];
@@ -56,13 +55,14 @@ class StationWrapper extends React.Component {
       if(e.altKey){
         e.preventDefault();
         let newAngel = this.state.nodeAngel + Math.sign(e.deltaY) * 45; //根据滚轮的上下切换旋转角度
-        this.setState({nodeAngel: newAngel%360})
         //数据更新
         let data = {
           id: this.props.id,
           nodeAngel: newAngel%360
         }
         ajax.stationPost(data, () => {
+          this.setState({nodeAngel: newAngel%360})
+
           this.props.updateStation('站点角度值已更新！');
         })
       }
@@ -188,7 +188,7 @@ class StationWrapper extends React.Component {
             left: this.state.left,
             top: this.state.top
           }}
-          className='station-wrapper'>
+          className='station-wrapper fadein'>
           <StationNode
             {...this.nodeOption}
             handleDragEnd={(e) => this.onNodeDragEnd(e)}

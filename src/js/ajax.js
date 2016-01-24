@@ -1,5 +1,5 @@
 import $ from 'jquery';
-const host = 'http://localhost:3000';
+const host = 'http://192.168.2.101:3000';
 
 const ajax = {
   stationGet(fnDone) {
@@ -61,16 +61,6 @@ const ajax = {
         }
       })
     },
-  selectGet(fnDone){
-    $.ajax({
-      url:`${host}/stationselect`,
-      method:'get',
-      success:(data)=>{
-        fnDone(data);
-      },
-      error:err=>console.log(err)
-    })
-  },
     timeGet(fnDone) {
       $.ajax({
         url: `${host}/time`,

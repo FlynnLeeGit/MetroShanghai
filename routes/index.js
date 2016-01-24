@@ -14,7 +14,7 @@ router.all('*', function(req, res, next) {
 //地铁站点路由
 router.route('/station')
   .get(function(req, res, next) {
-    model.station.find(function(err, data) {
+    model.station.find(['line','A'],function(err, data) {
       if (err) throw err;
       res.json(data);
     })
@@ -52,27 +52,8 @@ model.station.aggregate().max('uniquekey').get(function(err,max){
   res.json({result:'ok',msg:'取最大key值',maxkey:max});
 })
 })
-// router.get('/station/key/:key',function(req,res,next){
-//   model.station.find({uniquekey:req.params.key},function(err,data){
-//        if (err) throw err;
-//        console.log(data[0]);
-//     res.json(data[0]);
-//   })
-// })
-router.get('/stationselect',function(req,res,next){
- model.station.find(['line','A']).only('uniquekey','line','chsName').run(function(err,data){
-    var optionObj={};
-    for(var k in data){
-      if(!optionObj[data[k].line]){
-        optionObj[data[k].line]=[];
-      }else{
-         optionObj[data[k].line].push(data[k]);
-      }
-    }
-    res.json(optionObj);  //生成以线路号为键名的对象
- })
 
-})
+
 
 
 

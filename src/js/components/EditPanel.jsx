@@ -6,12 +6,7 @@ class EditPanel extends React.Component {
     super(props);
   }
 
-  handleTimeDelClick(e,id){
-    e.preventDefault();
-    ajax.timeDel(id,()=>{
-      this.props.updateStation();
-    })
-  }
+
   initTimeData() {
     if (this.props.time) { //time有定义 因为异步加载的问题此处可能是undefined 所以要判断下
       this.timeList = this.props.time.map((timeSingle, index) => {
@@ -20,34 +15,9 @@ class EditPanel extends React.Component {
 
             <div className='input-group'>
               <span className='input-group-addon'>
-                {`第${index + 1}个相邻站编号`}
+                  到{timeSingle.next}号站点时间
               </span>
-              <input
-                name='next'
-                className='form-control'
-                defaultValue={timeSingle.next}
-                type='text'
-                disabled/>
-            </div>
-
-
-
-            <div className='input-group'>
-              <span className='input-group-addon'>
-                {`到${index + 1}邻站时间`}
-              </span>
-              <input
-                name='value'
-                className='form-control'
-                type='text'
-                defaultValue={timeSingle.value}
-                disabled/>
-              <span className='input-group-addon'>分钟</span>
-              <span className='input-group-btn'>
-                <button
-                  onClick={e=>this.handleTimeDelClick(e,timeSingle.id)}
-                  className='btn btn-sm btn-danger'>删除时间点</button>
-              </span>
+              <span className='input-group-addon'>{timeSingle.value}分钟</span>
             </div>
           </div>
         );

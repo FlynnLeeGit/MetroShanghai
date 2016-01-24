@@ -34,6 +34,7 @@
 
 
    setStart(start, end) { //设定需要计算的起点与终点
+
      this.clonePath = this.P.concat([]); //需要克隆出Path数组以供多次计算，此为二维数据需进行深拷贝
      for (let _k = 0; _k < this.clonePath.length; _k++) {
        if(this.clonePath[_k].length == 0) continue;  //已经是空数组的不用理会
@@ -52,7 +53,8 @@
      this.checkNum(); //验证合法性
 
      this.D = this.M[start]; // 缓存需要操作的行
-     for (let i = start; i < this.n; i++) {
+
+     for (let i = 0; i < this.n; i++) {
        if (!this.D[i]) this.D[i] = Infinity;
      }
 
@@ -74,17 +76,19 @@
    getMin(start, end) {
      this.setStart(start, end);
      /*主循环开始-----*/
-     for (let i = this.start; i < this.n; i++) {
+     for (let i = 0; i < this.n; i++) {
        var _minPreVal = Infinity;
        this.w = -1;
 
-       for (let v = this.start; v < this.n; v++) { //获取中继节点
-         console.log(typeof this.start);
+       for (let v = 0; v < this.n; v++) { //获取中继节点
          if (!this.cloneUnion[v] && this.D[v] < _minPreVal) { //该节点不在U集合中
            _minPreVal = this.D[v]; //更新最小值
            this.w = v; //更新中继点节点
          }
        }
+
+
+
        if (this.w == -1) {
          console.error(`无${!this.opposite?this.start:this.end}到${!this.opposite?this.end:this.start}节点之间的路径!请重新查看参数`);
          return {
@@ -94,6 +98,9 @@
        }
        this.cloneUnion[this.w] = true; //更新节点标记
        this.clonePath[this.w].push(this.w); //更新终点路径节点
+
+// console.log(this.w+'索引 ',this.clonePath[this.w],_minPreVal);
+
 
 
        this.getNextNode(); //获取下一节点方法
@@ -108,7 +115,7 @@
    }
 
    getNextNode() {
-     for (let v = this.start; v < this.n; v++) { //通过中继节点到下一节点
+     for (let v = 0; v < this.n; v++) { //通过中继节点到下一节点
        if (!this.D[v]) { //忽略下一节点所在行中undefined的值
          continue;
        }
@@ -120,5 +127,6 @@
      }
    }
  }
+
 
  export default Dij;
