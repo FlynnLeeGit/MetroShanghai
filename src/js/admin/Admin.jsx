@@ -1,20 +1,20 @@
 import React from 'react';
 
-import StationWrapper from './js/components/StationWrapper';
-import EditPanel from './js/components/EditPanel';
-import AddPanel from './js/components/AddPanel';
-import TimePanel from './js/components/TimePanel';
-import Alert from './js/components/Alert';
+import StationWrapper from './StationWrapper';
+import EditPanel from './EditPanel';
+import AddPanel from './AddPanel';
+import TimePanel from './TimePanel';
 
-import '../lib/bootstrap.css';
-import './scss/main.scss';
+import Alert from '../common/Alert';
 
-import Dij from './js/Dij';
-import ajax from './js/ajax';
 
-import {findIndex} from './js/Common';
 
-class Main extends React.Component {
+import Dij from '../common/Dij';
+import ajax from '../common/ajax';
+
+import {findIndex} from '../common/Common';
+
+class Admin extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,6 +37,8 @@ class Main extends React.Component {
       maxKey: 0,
 
       showTime: false,
+
+      langCN:true,
 
       showAlert: false,
       alertText: '',
@@ -69,14 +71,13 @@ class Main extends React.Component {
       line2Width: 3,
       line2Offset: 0
     };
-    this.dij = new Dij(400);
+    this.dij = new Dij(380);
 
   }
 
   componentDidMount() {
     this.initStationsData();
     this.initTimeData();
-    this.initTransferData();
     this.getMaxKey();
     this.timer1=setInterval(() => {
           this.setState({
@@ -97,11 +98,6 @@ class Main extends React.Component {
     ajax.timeGet((timeResult) => {
       this.dij.initSource(timeResult); //dij实例初始化数据
       this.setState({timeData: timeResult});
-    })
-  }
-  initTransferData() {
-    ajax.transferGet((transferResult) => {
-      this.setState({transferData: transferResult}); //换成站点状态更新
     })
   }
   getMaxKey() {
@@ -235,6 +231,11 @@ class Main extends React.Component {
     this.setState({lastSelected: this.state.nowSelected, nowSelected: endKey});
   }
 
+changeLang(e){
+  this.setState({langCN:!this.state.langCN})
+
+}
+
   render() {
     if (this.state.loading) {
       return <h1>渲染中...</h1>
@@ -248,31 +249,40 @@ class Main extends React.Component {
 
       let stations = this.state.stationsData.map((station, index) => {
         if (index < this.state.maxRender) {
-          return <StationWrapper key={station.id} {...station} index={index} lastSelected={this.state.lastSelected == station.uniquekey} selected={this.state.nowSelected == station.uniquekey} pathNode={findIndex(this.state.path, station.uniquekey) != -1} openEditPanel={this.openEditPanel.bind(this)} selectStation={this.selectStation.bind(this)} updateStation={this.updateStation.bind(this)}/>
+          return <StationWrapper key={station.id} {...station} index={index} langCN={this.state.langCN} lastSelected={this.state.lastSelected == station.uniquekey} selected={this.state.nowSelected == station.uniquekey} pathNode={findIndex(this.state.path, station.uniquekey) != -1} openEditPanel={this.openEditPanel.bind(this)} selectStation={this.selectStation.bind(this)} updateStation={this.updateStation.bind(this)}/>
         }
       })
 
 
       return (
-        <div className='main-container' onClick={() => this.onClickLayer()} onDragOver={e => e.preventDefault()} onDrop={e => e.preventDefault()}>
 
+        <div>
+          <div className='fixed-bar header'>
+                    <Alert text={this.state.alertText} visible={this.state.showAlert} theme={this.state.alertTheme} autoClose={this.state.alertAutoClose} onDismiss={this.onDismissAlert.bind(this)}/>
+              </div>
+
+<div className='main-container' onClick={() => this.onClickLayer()} onDragOver={e => e.preventDefault()} onDrop={e => e.preventDefault()}>
           <h1>载入站点中{parseInt(progress)}%</h1>
-
-          <button onClick={(e) => this.openAddPanel(e)} className='btn btn-lg btn-info add-btn'>添加站点</button>
-          <button onClick={(e) => this.openTimePanel(e)} className='btn btn-lg btn-success time-btn'>时间管理</button>
-          <EditPanel theme='info' title='编辑' {...this.state.stationsData[this.state.editIndex]} visible={this.state.showEdit} onEditChange={e => this.onEditChange(e, this.state.editIndex)} onEditConfirm={e => this.onEditConfirm(e, this.state.editIndex)} onEditDelete={e => this.onEditDelete(e, this.state.editIndex)} onEditClose={e => this.onEditClose(e)} updateStation={this.updateStation.bind(this)}/>
-
+        <EditPanel theme='info' title='编辑' {...this.state.stationsData[this.state.editIndex]} visible={this.state.showEdit} onEditChange={e => this.onEditChange(e, this.state.editIndex)} onEditConfirm={e => this.onEditConfirm(e, this.state.editIndex)} onEditDelete={e => this.onEditDelete(e, this.state.editIndex)} onEditClose={e => this.onEditClose(e)} updateStation={this.updateStation.bind(this)}/>
           <AddPanel theme='warning' title='添加站点' maxKey={this.state.maxkey} visible={this.state.showAdd} handleChange={e => this.changeAddValue(e)} onConfirmBtn={this.confirmAdd.bind(this)} onClose={e => this.onCloseAdd(e)}/>
-
           <TimePanel theme='success' title='时间管理列表' visible={this.state.showTime} updateTime={this.updateTime.bind(this)} tData={this.state.timeData} sData={this.state.stationsData} idMap={this.state.idMap}/>
-
-          <Alert text={this.state.alertText} visible={this.state.showAlert} theme={this.state.alertTheme} autoClose={this.state.alertAutoClose} onDismiss={this.onDismissAlert.bind(this)}/>
-
           {stations}
         </div>
+
+
+ <div className='fixed-bar footer'>
+                <button className="btn btn-lg btn-warning change-lang" onClick={e=>this.changeLang(e)}>切换语言</button>
+            <button onClick={(e) => this.openAddPanel(e)} className='btn btn-lg btn-info add-btn'>添加站点</button>
+          <button onClick={(e) => this.openTimePanel(e)} className='btn btn-lg btn-success time-btn'>时间管理</button>
+
+
+              </div>   
+
+        </div>
+        
       );
     }
   }
 }
 
-export default Main;
+export default Admin;

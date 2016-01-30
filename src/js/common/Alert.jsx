@@ -14,10 +14,10 @@ class Alert extends React.Component{
   render(){
     let ani=this.props.autoClose?'fadeout':'';
     return(
-      <div className='modal-layer alert-layer' style={{display:this.props.visible?'block':'none'}}>
+      <div className='alert-layer' style={{display:this.props.visible?'block':'none'}}>
       <button
         id='alert'
-        className={`btn-${this.props.theme} ${ani} btn alert-btn`}>
+        className={`btn-${this.props.theme} ${ani} btn btn-lg alert-btn`}>
         {this.props.text}
       </button>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import ajax from '../ajax';
+import ajax from '../common/ajax';
 import LineSelect from './LineSelect.jsx';
 
 class TimePanel extends React.Component {

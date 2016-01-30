@@ -40,6 +40,8 @@ const findIndex = (obj,target,child) => {  //寻找target元素是否存在于�
   return -1;
 }
 
+
+//浅比较两个对象属性相等函数
 function compare(obj1, obj2) {
   for (var k in obj1) {
     if (typeof obj1[k] !== 'function' && typeof obj1[k] !== 'object') {

@@ -1,8 +1,8 @@
 import React from 'react';
 
 //引入函数
-import ajax from '../ajax';
-import {calcAngel,compare,findIndex} from '../Common';
+import ajax from '../common/ajax';
+import {calcAngel,compare,findIndex} from '../common/Common';
 
 //引入子组件
 import StationNode from './StationNode.jsx';
@@ -130,7 +130,7 @@ class StationWrapper extends React.Component {
     }
     onLineContext(e) {
       e.preventDefault();
-        this.props.openEditPanel(this.props.index);
+      this.props.openEditPanel(this.props.index);
     }
 
     initConfig() {
@@ -154,6 +154,7 @@ class StationWrapper extends React.Component {
         wc: this.props.wc,
         chsName: this.props.chsName,
         engName: this.props.engName,
+        langCN:this.props.langCN,
       }
 
       this.lineOption = {
@@ -181,42 +182,46 @@ class StationWrapper extends React.Component {
 
     render() {
       this.initConfig();
-      return (
-        <div
-          style={{
-            left: this.state.left,
-            top: this.state.top,
-          }}
-          className='station-wrapper fadein'>
-          <StationNode
-            {...this.nodeOption}
-            handleDragEnd={(e) => this.onNodeDragEnd(e)}
-            handleDrag={e => this.onNodeDrag(e)}
-            handleClick={(e) => this.onNodeClick(e)}
-            handleContextMenu={(e) => this.onNodeContext(e)}
-            handleWheel={(e) => this.onNodeWheel(e)}/>
-          <StationName
-            {...this.nameOption}
-            handleClick={(e)=>this.onNameClick(e)}
-            handleDragEnd={() => this.onNameDragEnd()}
-            handleDrag={e => this.onNameDrag(e)}
-            handleWheel={e => this.onNameWheel(e)}
-            handleContextMenu={e => this.onNameContext(e)}/>
-          <StationLine
-            {...this.lineOption}
-            handleDragEnd={e => this.onLineDragEnd(e)}
-            handleDrag={e => this.onLineDrag(e)}
-            handleWheel={e => this.onLineWheel(e)}
-            handleContextMenu={e => this.onLineContext(e)}/>
-          <StationLine
-            {...this.line2Option}
-            handleDragEnd={e => this.onLineDragEnd(e, true)}
-            handleDrag={e => this.onLineDrag(e, true)}
-            handleWheel={e => this.onLineWheel(e, true)}
-            handleContextMenu={e => this.onLineContext(e)}/>
 
-        </div>
-      );
+        return (
+          <div
+            style={{
+              left: this.state.left,
+              top: this.state.top,
+            }}
+            className='station-wrapper fadein'>
+
+            <StationNode
+              {...this.nodeOption}
+              handleDragEnd={(e) => this.onNodeDragEnd(e)}
+              handleDrag={e => this.onNodeDrag(e)}
+              handleClick={(e) => this.onNodeClick(e)}
+              handleContextMenu={(e) => this.onNodeContext(e)}
+              handleWheel={(e) => this.onNodeWheel(e)}/>
+
+            <StationName
+              {...this.nameOption}
+              handleClick={(e)=>this.onNameClick(e)}
+              handleDragEnd={() => this.onNameDragEnd()}
+              handleDrag={e => this.onNameDrag(e)}
+              handleWheel={e => this.onNameWheel(e)}
+              handleContextMenu={e => this.onNameContext(e)}/>
+
+            <StationLine
+              {...this.lineOption}
+              handleDragEnd={e => this.onLineDragEnd(e)}
+              handleDrag={e => this.onLineDrag(e)}
+              handleWheel={e => this.onLineWheel(e)}
+              handleContextMenu={e => this.onLineContext(e)}/>
+
+            <StationLine
+              {...this.line2Option}
+              handleDragEnd={e => this.onLineDragEnd(e, true)}
+              handleDrag={e => this.onLineDrag(e, true)}
+              handleWheel={e => this.onLineWheel(e, true)}
+              handleContextMenu={e => this.onLineContext(e)}/>
+          </div>
+        );
     }
   }
 

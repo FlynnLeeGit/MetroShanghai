@@ -1,5 +1,6 @@
 import React from 'react';
-import ajax from '../ajax';
+import ajax from '../common/ajax';
+
 class StationName extends React.Component {
   constructor(props) {
     super(props);
@@ -71,8 +72,8 @@ class StationName extends React.Component {
             onDragEnd={e=>this.handleDragEnd(e)}
 
             onClick={this.props.handleClick}>
-            <span>
-              {this.props.chsName}
+            <span style={{fontSize:this.props.langCN?'0.9em':'0.6em'}}>
+              {this.props.langCN?this.props.chsName:this.props.engName}
               <i
                 className='subicon icon-assist'
                 style={{
@@ -90,13 +91,8 @@ class StationName extends React.Component {
                 }}>
               </i>
             </span>
-            <span className="s-name-eng">
-              {this.props.engName}
-              <span ref='null'>
-              </span>
+            <span ref='null'>
             </span>
-
-
           </div>
         );
 

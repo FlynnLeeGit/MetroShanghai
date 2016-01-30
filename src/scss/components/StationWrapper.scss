@@ -41,18 +41,16 @@
   .s-name-area {
     color:$main-font-color;
     font-weight: bold;
-    display: flex;
-    font-size: 0.9em;
-    flex-direction: column;
-    align-items: center;
     left: 0;
     top: 0;
-
     position: absolute;
+    display: flex;
     z-index: 5;
-    text-shadow: 0 0 3px #fff;
-    .s-name-eng {
-      font-size:1rem;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    .subicon-area{
+      font-size: 0.6em;
     }
   }
 }

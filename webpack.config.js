@@ -33,11 +33,7 @@ var config = {
             loader: 'url'
         }]
     },
-    plugins: [
-        new OpenBrowserWebpackPlugin({
-            url: 'http://localhost:8080'
-        }),
-    ],
+    plugins: [],
 
     resolve:{
         extensions:['','.js','.jsx','.json']  //可以省略的require后缀
@@ -47,16 +43,27 @@ var config = {
 
 
 
+//开发环境插件配置
+if (args.dev) {
+  config.plugins.push(
+    new OpenBrowserWebpackPlugin({
+      url: 'http://localhost:8080'
+    })
+  )
+}
+
 //生产环境插件配置
 if (args.minify) { //minify参数下加载以下优化插件
-    config.plugins = [
-        new webpack.optimize.UglifyJsPlugin({ //压缩js文件
-            compress: {
-                warnings: false //不用显示警告信息
-            }
-        }),
-        new webpack.optimize.OccurenceOrderPlugin(), //优化js插件
-    ]
+  config.plugins.push(
+    new webpack.optimize.UglifyJsPlugin({ //压缩js文件
+      compress: {
+        warnings: false //不用显示警告信息
+      }
+    })
+  );
+  config.plugins.push(
+    new webpack.optimize.OccurenceOrderPlugin() //优化js插件
+  )
 }
 
 module.exports = config;
