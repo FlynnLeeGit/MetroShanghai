@@ -15,26 +15,30 @@ class StationName extends React.Component {
     let [l,t]=[e.target.offsetLeft,e.target.offsetTop];
     [this.offsetX,this.offsetY]=[e.pageX-l,e.pageY-t];  //拖动开始时记录下鼠标相对于当前容器的相对位置
   }
-  handleDrag(e){  //
-    let [x,y]=[e.pageX-this.offsetX,e.pageY-this.offsetY];
-    let [w,h]=[e.target.offsetWidth,e.target.offsetHeight];
+  handleDrag(e){
+    if(e.altKey){
+      let [x,y]=[e.pageX-this.offsetX,e.pageY-this.offsetY];
+      let [w,h]=[e.target.offsetWidth,e.target.offsetHeight];
 
-    if(Math.hypot(x+w/2,y+h/2)<w){  //圆形公式 名称在名称容器长度范围的的半径限制内移动 Math.hypot为平方根
-      this.setState({
-        nameLeft:x,
-        nameTop:y,
-      })
+      if(Math.hypot(x+w/2,y+h/2)<w){  //圆形公式 名称在名称容器长度范围的的半径限制内移动 Math.hypot为平方根
+        this.setState({
+          nameLeft:x,
+          nameTop:y,
+        })
+      }
     }
   }
   handleDragEnd(e){
-    let ajaxData={
-      id:this.props.id,
-      nameLeft:this.state.nameLeft,
-      nameTop:this.state.nameTop,
+    if(e.altKey){
+      let ajaxData={
+        id:this.props.id,
+        nameLeft:this.state.nameLeft,
+        nameTop:this.state.nameTop,
+      }
+      ajax.stationPost(ajaxData, () => {
+        console.log('名称位置更新完毕！');
+      });
     }
-    ajax.stationPost(ajaxData, () => {
-      console.log('名称位置更新完毕！');
-    });
   }
   handleWheel(e){
     if(e.altKey){
@@ -48,9 +52,7 @@ class StationName extends React.Component {
       })
     }
   }
-  componentDidMount() {
 
-  }
   render() {
     if(!Number(this.props.nameVisible)){
       return null;
@@ -66,7 +68,6 @@ class StationName extends React.Component {
             style={style}
             onWheel={e=>this.handleWheel(e)}
             onContextMenu={this.props.handleContextMenu}
-            onDragOver={e=>e.preventDefault()}
             onDragStart={e=>this.handleDragStart(e)}
             onDrag={e=>this.handleDrag(e)}
             onDragEnd={e=>this.handleDragEnd(e)}

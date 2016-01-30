@@ -8,6 +8,7 @@ class StationNode extends React.Component {
    e.dataTransfer.setData('Text','node');
     e.dataTransfer.setDragImage(this.refs.null,0,0);  //设置默认的浏览器样式不可见，拖动一个无宽高的元素
  }
+
   render() {
     let stationNodeClass = `s-node s-${this.props.nodeType=='normal'?'round':'ellipse'} line-node-${this.props.line}`;
     return (
@@ -41,12 +42,6 @@ class StationNode extends React.Component {
   }
 }
 
-StationNode.defaultProps = {
-  nodeType: 'normal'
-};
 
-StationNode.propTypes = {
-  nodeType: React.PropTypes.oneOf(['normal', 'transfer'])
-};
 
 export default StationNode;

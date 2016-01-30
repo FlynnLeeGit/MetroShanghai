@@ -36,20 +36,22 @@ class StationWrapper extends React.Component {
     return shouldRender;
   }
   onNodeDrag(e) {
-    let [x,
-      y] = [e.pageX, e.pageY];
+  if(e.altKey){
+    let [x,  y] = [e.pageX, e.pageY];
       this.setState({left: x, top: y});
     }
+  }
+
     onNodeDragEnd(e) {
       //数据更新
-      let data = {
-        id: this.props.id,
-        left: this.state.left,
-        top: this.state.top
-      };
-      ajax.stationPost(data, () => {
-        this.props.updateStation('站点位置信息已更新！');
-      })
+        let data = {
+          id: this.props.id,
+          left: this.state.left,
+          top: this.state.top
+        };
+        ajax.stationPost(data, () => {
+          this.props.updateStation('站点位置信息已更新！');
+        })
     }
     onNodeWheel(e) {
       if(e.altKey){
@@ -183,45 +185,50 @@ class StationWrapper extends React.Component {
     render() {
       this.initConfig();
 
-        return (
-          <div
-            style={{
-              left: this.state.left,
-              top: this.state.top,
-            }}
-            className='station-wrapper fadein'>
+      return (
+        <div
+          style={{
+            left: this.state.left,
+            top: this.state.top,
+          }}
+          className='station-wrapper fadein'>
 
-            <StationNode
-              {...this.nodeOption}
-              handleDragEnd={(e) => this.onNodeDragEnd(e)}
-              handleDrag={e => this.onNodeDrag(e)}
-              handleClick={(e) => this.onNodeClick(e)}
-              handleContextMenu={(e) => this.onNodeContext(e)}
-              handleWheel={(e) => this.onNodeWheel(e)}/>
 
-            <StationName
-              {...this.nameOption}
-              handleClick={(e)=>this.onNameClick(e)}
-              handleDragEnd={() => this.onNameDragEnd()}
-              handleDrag={e => this.onNameDrag(e)}
-              handleWheel={e => this.onNameWheel(e)}
-              handleContextMenu={e => this.onNameContext(e)}/>
+          <StationNode
+            {...this.nodeOption}
+            handleDragEnd={e => this.onNodeDragEnd(e)}
+            handleDrag={e => this.onNodeDrag(e)}
+            handleClick={e => this.onNodeClick(e)}
+            handleContextMenu={e => this.onNodeContext(e)}
+            handleWheel={e => this.onNodeWheel(e)}/>
 
-            <StationLine
-              {...this.lineOption}
-              handleDragEnd={e => this.onLineDragEnd(e)}
-              handleDrag={e => this.onLineDrag(e)}
-              handleWheel={e => this.onLineWheel(e)}
-              handleContextMenu={e => this.onLineContext(e)}/>
 
-            <StationLine
-              {...this.line2Option}
-              handleDragEnd={e => this.onLineDragEnd(e, true)}
-              handleDrag={e => this.onLineDrag(e, true)}
-              handleWheel={e => this.onLineWheel(e, true)}
-              handleContextMenu={e => this.onLineContext(e)}/>
-          </div>
-        );
+          <StationName
+            {...this.nameOption}
+            handleClick={e=>this.onNameClick(e)}
+            handleDragEnd={() => this.onNameDragEnd()}
+            handleDrag={e => this.onNameDrag(e)}
+            handleWheel={e => this.onNameWheel(e)}
+            handleContextMenu={e => this.onNameContext(e)}/>
+
+
+          <StationLine
+            {...this.lineOption}
+            handleDragEnd={e => this.onLineDragEnd(e)}
+            handleDrag={e => this.onLineDrag(e)}
+            handleWheel={e => this.onLineWheel(e)}
+            handleContextMenu={e => this.onLineContext(e)}/>
+
+
+          <StationLine
+            {...this.line2Option}
+            handleDragEnd={e => this.onLineDragEnd(e, true)}
+            handleDrag={e => this.onLineDrag(e, true)}
+            handleWheel={e => this.onLineWheel(e, true)}
+            handleContextMenu={e => this.onLineContext(e)}/>
+
+        </div>
+      );
     }
   }
 

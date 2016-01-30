@@ -2,6 +2,8 @@ import React from 'react';
 import ajax from '../common/ajax';
 import LineSelect from './LineSelect.jsx';
 
+
+//时间管理
 class TimePanel extends React.Component {
   constructor(props) {
     super(props);
@@ -18,7 +20,6 @@ class TimePanel extends React.Component {
     this.setState({
       [e.target.name]: e.target.value
     })
-    console.log(e.target.name, e.target.value);
   }
 
   handleSubmit(e) {

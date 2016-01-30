@@ -1,48 +1,47 @@
 @charset "UTF-8";
-$main-font-color:#333; //站点文字颜色
-$main-bg-color:#ffe; //网页背景色
-$node-color:#fff;
-$node-selected-color:blue; //选中的站点色
-$node-path-color:indigo; //路径的站点色
+$main-font-color: #333; //站点文字颜色
+$main-bg-color: #ffe; //网页背景色
+$node-color: #fff;
+$node-selected-color: blue; //选中的站点色
+$node-path-color: indigo; //路径的站点色
 .fixed-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 99;
+}
+.header {
+  top: 0;
+}
+.footer {
+  bottom: 0;
+  .btn {
+    margin: 0 2em;
+  }
+}
+.title{
+  
+}
+
+
+
+
+.main-container {
+  background: $main-bg-color;
+  width: 3000px;
+  height: 2800px;
+  border: 1px solid transparent;
+  .modal-layer {
     position: fixed;
     left: 0;
-    right: 0;
-    text-align:center;
-    z-index:99;
-
-}
-
-.header {
     top: 0;
-}
-
-.footer {
+    right: 0;
     bottom: 0;
-    .btn{
-        margin:0 2em;
-    }
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.3);
+  }
 }
-
-
-
-   .main-container {
-        background: $main-bg-color;
-        width: 3000px;
-        height: 2800px;
-        
-        .modal-layer {
-            position: fixed;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 100;
-            background: rgba(255, 255, 255, 0.3);
-        
-    }
-}
-
 @import 'animate.scss';
 @import 'icon.scss';
 @import 'line.scss';

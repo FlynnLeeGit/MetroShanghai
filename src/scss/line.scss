@@ -1,16 +1,20 @@
 $line-color: rgb(204,0,0) rgb(0,153,0) rgb(255,255,0) rgb(102,0,102) rgb(204,0,204) rgb(255,51,102) rgb(205,114,0) rgb(0,102,204) rgb(149,211,219) rgb(192,168,209) rgb(128,0,0) rgb(0,124,101) rgb(239,129,197);
 $line16: rgb(146,206,194);
 $white: #fff;
+
+
+$line-num-width:1em;
+
 .line-number {
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-size: 2rem;
+  margin-top: $line-num-width/2;
+  margin-left: $line-num-width;
+  display: inline-block;
+  font-size:$line-num-width*3;
   text-align: center;
-  line-height: 1em;
-  height: 1em;
-  color: #fff;
-  padding: 0.2em;
+  // width: $line-num-width;
+  height: $line-num-width*1.5;
+  line-height: $line-num-width*1.5;
+  padding: 0 0.1em;
 }
 @for $i from 1 through 13 {
   .line-#{$i} {

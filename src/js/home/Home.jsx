@@ -2,6 +2,7 @@ import React from 'react';
 
 import StationWrapper from './StationWrapper';
 import Alert from '../common/Alert';
+import LineNumber from './LineNumber';
 
 import Dij from '../common/Dij';
 import ajax from '../common/ajax';
@@ -12,7 +13,6 @@ class Home extends React.Component {
     super(props);
     this.state = {
       loading: true, //数据是否在loading中
-      maxRender: 1,
 
       stationsData: [], //所有站点信息的数据集合
       timeData: [],
@@ -34,13 +34,6 @@ class Home extends React.Component {
   componentDidMount() {
     this.initStationsData();
     this.initTimeData();
-    this.timer1=setInterval(() => {
-      this.setState({
-        maxRender: this.state.maxRender + 100
-      })
-    }, 1);
-    
-
   }
   initStationsData() {
     ajax.stationGet((result) => {
@@ -103,46 +96,47 @@ class Home extends React.Component {
           if (this.state.loading) {
             return <h1>渲染中...</h1>
           } else {
-            let [max,len]=[this.state.maxRender,this.state.stationsData.length]; 
-            let progress=parseInt(max/len*100);
-            if(progress>100) progress=100;
-
-            if(max>len){  //当加载完毕后清除定时器
-              clearInterval(this.timer1);
-            }
-
             let stations = this.state.stationsData.map((station, index) => {
-              if (index < this.state.maxRender) {
-                return <StationWrapper
-                  key={station.id} {...station}
-                  index={index}
-                  lastSelected={this.state.lastSelected == station.uniquekey}
-                  selected={this.state.nowSelected == station.uniquekey}
-                  pathNode={findIndex(this.state.path, station.uniquekey) != -1}
-                  langCN={this.state.langCN}
-                  selectStation={this.selectStation.bind(this)} />
-              }
+              return <StationWrapper
+                key={station.id} index={index}
+                {...station}
+                lastSelected={this.state.lastSelected == station.uniquekey}
+                selected={this.state.nowSelected == station.uniquekey}
+                pathNode={findIndex(this.state.path, station.uniquekey) != -1}
+                langCN={this.state.langCN}
+                selectStation={this.selectStation.bind(this)} />
             })
+            let lines=[1,2,3,4,5,6,7,8,9,10,11,12,13,16].map((num)=>{
+              return <LineNumber key={num} line={num} />
+            })
+
             return (
               <div>
-                 <div className='fixed-bar header'>
-                    <Alert text={this.state.alertText} visible={this.state.showAlert} theme={this.state.alertTheme} autoClose={this.state.alertAutoClose} onDismiss={this.onDismissAlert.bind(this)}/>
-              </div>
-              
-           
+                <div className='fixed-bar header'>
+                  <Alert
+                    text={this.state.alertText}
+                    visible={this.state.showAlert}
+                    theme={this.state.alertTheme}
+                    autoClose={this.state.alertAutoClose}
+                    onDismiss={this.onDismissAlert.bind(this)}/>
+                </div>
                 <div
-                className='main-container'
-                onClick={() => this.onClickLayer()}>
-                {stations}
-              </div> 
+                  className='main-container'
+                  onClick={() => this.onClickLayer()}>
+                  <h1>上海地铁网络交通示意图</h1>
+                  {lines}
+                  {stations}
+                </div>
 
-              <div className='fixed-bar footer'>
-                <button className="btn btn-lg btn-warning change-lang" onClick={e=>this.changeLang(e)}>切换语言</button>
-              </div>             
+                <div className='fixed-bar footer'>
+                  <button
+                    className="btn btn-lg btn-warning change-lang"
+                    onClick={e=>this.changeLang(e)}>切换语言</button>
+                </div>
               </div>
             );
           }
         }
       }
 
-export default Home;
+      export default Home;

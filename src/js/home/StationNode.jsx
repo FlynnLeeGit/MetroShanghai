@@ -22,9 +22,7 @@ class StationNode extends React.Component {
           WebkitTransform:`translate(-50%,-50%) rotate(${this.props.nodeAngel}deg)`,
           zIndex:this.props.pathNode||this.props.selected?4:3,
         }}
-        draggable='true'
         onClick={this.props.handleClick}
-        onDragOver={e=>this.handleDragOver(e)}
         onDrag={e=>this.handleDrag(e)}>
         <span
           className='s-node-clicked'
