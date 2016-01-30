@@ -36,10 +36,8 @@ class StationWrapper extends React.Component {
     return shouldRender;
   }
   onNodeDrag(e) {
-  if(e.altKey){
     let [x,  y] = [e.pageX, e.pageY];
       this.setState({left: x, top: y});
-    }
   }
 
     onNodeDragEnd(e) {
@@ -191,7 +189,7 @@ class StationWrapper extends React.Component {
             left: this.state.left,
             top: this.state.top,
           }}
-          className='station-wrapper fadein'>
+          className='station-wrapper'>
 
 
           <StationNode

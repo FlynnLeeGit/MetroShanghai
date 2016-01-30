@@ -9,19 +9,18 @@ $node-path-color: indigo; //路径的站点色
   left: 0;
   right: 0;
   text-align: center;
-  z-index: 99;
+  
 }
 .header {
+  z-index: 99;
   top: 0;
 }
 .footer {
   bottom: 0;
+  z-index: 97;
   .btn {
     margin: 0 2em;
   }
-}
-.title{
-  
 }
 
 
@@ -38,7 +37,7 @@ $node-path-color: indigo; //路径的站点色
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 100;
+    z-index: 98;
     background: rgba(255, 255, 255, 0.3);
   }
 }

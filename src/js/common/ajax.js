@@ -80,19 +80,16 @@ const ajax = {
                 data: data,
                 success: (result) => {
                     if (result) {
-                        console.log(3);
                         fnDone(result);
                     }
                 }
             })
         },
-        timeDel(id, fnDone) {
+        timeDel(data, fnDone) {
            minAjax({
                 url: `${host}/time`,
                 type: 'delete',
-                data: {
-                    id: id
-                },
+                data: data,
                 success: (result) => {
                     if (result == 'ok') {
                         fnDone();

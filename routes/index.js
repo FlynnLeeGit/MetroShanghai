@@ -5,48 +5,24 @@ var model = require('../model/db');
 
 router.all('*', function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
-//     res.header('Access-Control-Allow-Headers', 'X-Requested-With');
-//     res.header('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS');
-//     res.header('X-Powered-By', '3.2.1');
+    res.header('Access-Control-Allow-Headers', 'X-Requested-With');
+    res.header('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE');
+    res.header('X-Powered-By', '3.2.1');
     next();
 })
 
 //地铁站点路由
 
-router.route('/test')
-    .get(function(req, res) {
-        console.log(req.body);
-        res.status(200);
-        res.send('get');
-    })
-    .put(function(req, res) {
-        console.log(req.body);
-        res.status(200);
-        res.send('put');
-    })
-    .post(function(req, res) {
-        console.log(req.body);
-        model.station.find({id:req.body.id},function(err,data){
-          res.json(data);
-        })
-        res.status(200);
-        res.json(req.body);
-    })
-    .delete(function(req, res) {
-        console.log(req.body);
-        res.status(200);
-        res.send('delete');
-    });
 
 
-router.route('/station')
+router.route('/station') //获取站点表信息 以线路号排序
     .get(function(req, res, next) {
         model.station.find(['line', 'A'], function(err, data) {
             if (err) throw err;
             res.json(data);
         })
     })
-    .post(function(req, res, next) {
+    .post(function(req, res, next) { //更新数据
         model.station.get(req.body.id, function(err, data) {
             if (err) throw err;
             data.save(req.body, function(err) {
@@ -57,7 +33,36 @@ router.route('/station')
         })
     })
     .put(function(req, res, next) {
-        model.station.create(req.body, function(err, data) {
+        var add = {
+                uniquekey: req.body.uniquekey,
+                line: req.body.line,
+                chsName: req.body.chsName,
+                engName: req.body.engName,
+                nodeType: req.body.nodeType,
+                left: req.body.left,
+                top: req.body.top,
+                nodeAngel: 0,
+
+                nameAngel: 0,
+                nameVisible: 1,
+
+                nameLeft: 30,
+                nameTop: 30,
+                assist: 0,
+                wc: 0,
+
+                lineAngel: 0,
+                lineWidth: 3,
+                lineOffset: 0,
+
+                line2Visible: 0,
+                line2Angel: 0,
+                line2Width: 3,
+                line2Offset: 0,
+            }
+            //添加站点的获得值与默认值
+
+        model.station.create(add, function(err, data) {
             if (err) throw err;
             res.json(data);
         })
@@ -110,32 +115,24 @@ router.route('/time')
 })
 
 .put(function(req, res, next) {
-        model.time.create(req.body, function(err, data) {
-            if (err) throw err;
-            res.json(data);
-        })
+    model.time.create(req.body, function(err, data) {
+        if (err) throw err;
+        res.json(data);
     })
-    .delete(function(req, res, next) {
-        model.time.find({
-            id: req.body.id
-        }).remove(function(err) {
-            if (err) throw err;
-            res.status(200);
-            res.send('ok');
-        })
+})
+
+.delete(function(req, res, next) {
+    console.log(req.body);
+
+    model.time.find(req.body).remove(function(err) {
+        if (err) throw err;
+        res.status(200);
+        res.send('ok');
     })
+})
 
 
-router.route('/transfer/:chsName')
-    .get(function(req, res, next) {
-        console.log(req.params);
-        model.station.find({
-            nodeType: 'transfer',
-            chsName: req.params.chsName
-        }).only('uniquekey', 'line', 'chsName').run(function(err, data) {
-            res.json(data);
-        })
-    })
+
 
 
 
