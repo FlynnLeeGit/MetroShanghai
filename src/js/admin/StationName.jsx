@@ -16,7 +16,6 @@ class StationName extends React.Component {
     [this.offsetX,this.offsetY]=[e.pageX-l,e.pageY-t];  //拖动开始时记录下鼠标相对于当前容器的相对位置
   }
   handleDrag(e){
-    if(e.altKey){
       let [x,y]=[e.pageX-this.offsetX,e.pageY-this.offsetY];
       let [w,h]=[e.target.offsetWidth,e.target.offsetHeight];
 
@@ -26,10 +25,8 @@ class StationName extends React.Component {
           nameTop:y,
         })
       }
-    }
   }
   handleDragEnd(e){
-    if(e.altKey){
       let ajaxData={
         id:this.props.id,
         nameLeft:this.state.nameLeft,
@@ -38,8 +35,8 @@ class StationName extends React.Component {
       ajax.stationPost(ajaxData, () => {
         console.log('名称位置更新完毕！');
       });
-    }
   }
+
   handleWheel(e){
     if(e.altKey){
       e.preventDefault();
@@ -96,11 +93,7 @@ class StationName extends React.Component {
             </span>
           </div>
         );
-
-
       }
-
-
     }
   }
 

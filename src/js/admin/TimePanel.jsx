@@ -31,14 +31,20 @@ class TimePanel extends React.Component {
       uniquekey_id: start,
       next: next,
       value: value
-    }, (result) => {
-      this.props.updateTime();
+    }, () => {
+      this.props.updateTime('时间添加成功');
     })
 
     e.preventDefault();
   }
- handleDeleteTime(e){
+ handleDeleteTime(e,start,end){
    e.preventDefault();
+   if(confirm('确定删除时间点么?')){
+      let data={uniquekey_id:start,next:end};
+       ajax.timeDel(data,()=>{
+      this.props.updateTime('时间删除成功');
+      })
+   }
  }
 
   initSelectOption() {
@@ -101,7 +107,7 @@ class TimePanel extends React.Component {
           <td>{t[2]}
             分钟</td>
           <td>
-            <button onClick={e=>this.handleDeleteTime(e)} className='btn btn-sm btn-danger'>删除</button>
+            <button onClick={e=>this.handleDeleteTime(e,t[0],t[1])} className='btn btn-sm btn-danger'>删除</button>
           </td>
         </tr>
       );

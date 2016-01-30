@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "webpack-dev-server --progress --colors --hot --inline --dev",
     "hotbuild": "webpack --progress --colors --profile --watch",
-    "build": "webpack --progress --colors --profile --watch --minify"
+    "build": "webpack --progress --colors --profile --minify"
   },
   "keywords": [],
   "author": "",

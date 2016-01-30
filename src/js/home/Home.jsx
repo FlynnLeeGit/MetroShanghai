@@ -2,8 +2,7 @@ import React from 'react';
 
 import StationWrapper from './StationWrapper';
 import Alert from '../common/Alert';
-import LineNumber from './LineNumber';
-
+import LineNumber from '../common/LineNumber';
 import Dij from '../common/Dij';
 import ajax from '../common/ajax';
 import {findIndex} from '../common/Common';
@@ -67,9 +66,9 @@ class Home extends React.Component {
   }
   selectStation(endKey) {
     let [start,
-      end] = [this.state.nowSelected, endKey];
+      end,path] = [this.state.nowSelected, endKey,this.state.path];
 
-      if (start && end && start != end) { //上一次点击与本次点击都有值且不相等，进入算法计算
+      if (start && end && start != end && path.length==0) { //上一次点击与本次点击都有值且不相等，进入算法计算
         let {result, path} = this.dij.getMin(start, end); //dij算法的获得最短时间距离和节点
         if (result) {
           let sData = this.state.stationsData;
@@ -88,8 +87,11 @@ class Home extends React.Component {
                 alertText: `从 ${startName} 到 ${endName} 途径${path.length}站,预计${result}分钟到达`
               })
             }
+          }else{
+
+
+          this.setState({lastSelected: this.state.nowSelected, nowSelected: endKey,path:[]});
           }
-          this.setState({lastSelected: this.state.nowSelected, nowSelected: endKey});
         }
 
         render() {
@@ -106,7 +108,7 @@ class Home extends React.Component {
                 langCN={this.state.langCN}
                 selectStation={this.selectStation.bind(this)} />
             })
-            let lines=[1,2,3,4,5,6,7,8,9,10,11,12,13,16].map((num)=>{
+              let lines=[1,2,3,4,5,6,7,8,9,10,11,12,13,16].map((num)=>{
               return <LineNumber key={num} line={num} />
             })
 

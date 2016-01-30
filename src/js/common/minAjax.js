@@ -15,7 +15,7 @@ const minAjax = (config) => {
     let xmlHttp = getXmlHttpObj();
      
     xmlHttp.open(option.type.toUpperCase(), option.url, true); //发送数据
-    if(option.type=='GET'){
+    if(option.type.toUpperCase()=='GET'){
         xmlHttp.send(null);
     }else{
         xmlHttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); //设置头信息
