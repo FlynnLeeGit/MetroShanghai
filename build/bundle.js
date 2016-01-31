@@ -19683,11 +19683,11 @@
 
 	__webpack_require__(222);
 
-	var _adminAdmin = __webpack_require__(228);
+	var _adminAdmin = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./admin/Admin\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	var _adminAdmin2 = _interopRequireDefault(_adminAdmin);
 
-	var _homeHome = __webpack_require__(242);
+	var _homeHome = __webpack_require__(229);
 
 	var _homeHome2 = _interopRequireDefault(_homeHome);
 
@@ -24996,405 +24996,7 @@
 	module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIiA+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8bWV0YWRhdGE+DQpDcmVhdGVkIGJ5IEZvbnRGb3JnZSAyMDEyMDczMSBhdCBUdWUgRGVjIDIyIDE2OjU2OjM4IDIwMTUNCiBCeSBBZHMNCjwvbWV0YWRhdGE+DQo8ZGVmcz4NCjxmb250IGlkPSJpY29uZm9udCIgaG9yaXotYWR2LXg9IjEwMjQiID4NCiAgPGZvbnQtZmFjZSANCiAgICBmb250LWZhbWlseT0iaWNvbmZvbnQiDQogICAgZm9udC13ZWlnaHQ9IjUwMCINCiAgICBmb250LXN0cmV0Y2g9Im5vcm1hbCINCiAgICB1bml0cy1wZXItZW09IjEwMjQiDQogICAgcGFub3NlLTE9IjIgMCA2IDMgMCAwIDAgMCAwIDAiDQogICAgYXNjZW50PSI4OTYiDQogICAgZGVzY2VudD0iLTEyOCINCiAgICB4LWhlaWdodD0iNzkyIg0KICAgIGJib3g9IjM0IC0yMDcgOTg0IDg4NyINCiAgICB1bmRlcmxpbmUtdGhpY2tuZXNzPSI1MCINCiAgICB1bmRlcmxpbmUtcG9zaXRpb249Ii0xMDAiDQogICAgdW5pY29kZS1yYW5nZT0iVSswMDc4LUU2RDQiDQogIC8+DQo8bWlzc2luZy1nbHlwaCBob3Jpei1hZHYteD0iMzc0IiANCmQ9Ik0zNCAwdjY4MmgyNzJ2LTY4MmgtMjcyek02OCAzNGgyMDR2NjE0aC0yMDR2LTYxNHoiIC8+DQogICAgPGdseXBoIGdseXBoLW5hbWU9Ii5ub3RkZWYiIGhvcml6LWFkdi14PSIzNzQiIA0KZD0iTTM0IDB2NjgyaDI3MnYtNjgyaC0yNzJ6TTY4IDM0aDIwNHY2MTRoLTIwNHYtNjE0eiIgLz4NCiAgICA8Z2x5cGggZ2x5cGgtbmFtZT0iLm51bGwiIGhvcml6LWFkdi14PSIwIiANCiAvPg0KICAgIDxnbHlwaCBnbHlwaC1uYW1lPSJub25tYXJraW5ncmV0dXJuIiBob3Jpei1hZHYteD0iMzQxIiANCiAvPg0KICAgIDxnbHlwaCBnbHlwaC1uYW1lPSJ4IiB1bmljb2RlPSJ4IiBob3Jpei1hZHYteD0iMTAwMSIgDQpkPSJNMjgxIDU0M3EtMjcgLTEgLTUzIC0xaC04M3EtMTggMCAtMzYuNSAtNnQtMzIuNSAtMTguNXQtMjMgLTMydC05IC00NS41di03Nmg5MTJ2NDFxMCAxNiAtMC41IDMwdC0wLjUgMThxMCAxMyAtNSAyOXQtMTcgMjkuNXQtMzEuNSAyMi41dC00OS41IDloLTEzM3YtOTdoLTQzOHY5N3pNOTU1IDMxMHYtNTJxMCAtMjMgMC41IC01MnQwLjUgLTU4dC0xMC41IC00Ny41dC0yNiAtMzB0LTMzIC0xNnQtMzEuNSAtNC41cS0xNCAtMSAtMjkuNSAtMC41DQp0LTI5LjUgMC41aC0zMmwtNDUgMTI4aC00MzlsLTQ0IC0xMjhoLTI5aC0zNHEtMjAgMCAtNDUgMXEtMjUgMCAtNDEgOS41dC0yNS41IDIzdC0xMy41IDI5LjV0LTQgMzB2MTY3aDkxMXpNMTYzIDI0N3EtMTIgMCAtMjEgLTguNXQtOSAtMjEuNXQ5IC0yMS41dDIxIC04LjVxMTMgMCAyMiA4LjV0OSAyMS41dC05IDIxLjV0LTIyIDguNXpNMzE2IDEyM3EtOCAtMjYgLTE0IC00OHEtNSAtMTkgLTEwLjUgLTM3dC03LjUgLTI1dC0zIC0xNXQxIC0xNC41DQp0OS41IC0xMC41dDIxLjUgLTRoMzdoNjdoODFoODBoNjRoMzZxMjMgMCAzNCAxMnQyIDM4cS01IDEzIC05LjUgMzAuNXQtOS41IDM0LjVxLTUgMTkgLTExIDM5aC0zNjh6TTMzNiA0OTh2MjI4cTAgMTEgMi41IDIzdDEwIDIxLjV0MjAuNSAxNS41dDM0IDZoMTg4cTMxIDAgNTEuNSAtMTQuNXQyMC41IC01Mi41di0yMjdoLTMyN3oiIC8+DQogICAgPGdseXBoIGdseXBoLW5hbWU9InVuaUU2MUIiIHVuaWNvZGU9IiYjeGU2MWI7IiANCmQ9Ik00MDUgNjYxcTE1IDAgMjkgNnQyNC41IDE2dDE2LjUgMjR0NiAyOXEwIDIxIC0xMC41IDM4dC0yOCAyN3QtMzggMTB0LTM4IC0xMHQtMjcuNSAtMjd0LTEwIC0zOHEwIC0zMSAyMi41IC01M3Q1My41IC0yMnpNODQ5IDE0N2wtMTI5IDIyMXEtMyA1IC03IDl0LTkgNi41dC0xMCA0dC0xMSAxLjVoLTE4OWwtMiA2N2gxMzhxMTQgMSAyNCAxMC41dDEwIDIzLjVxMCAzMyAtMzQgMzRoLTE0MmwtNSA1NXEtMiAzMCAtMjQuNSA1MHQtNTIuNSAxOA0KcS0yMCAtMSAtMzYgLTExLjV0LTI1IC0yOHQtOCAtMzYuNWwxMyAtMjI5cTMgLTI5IDI1IC00OC41dDUyIC0xOS41aDI0NmwxMDAgLTE3MnE5IC0xNSAyNyAtMjB0MzQgNXExNSA5IDE5LjUgMjZ0LTQuNSAzNHpNNDU0IDE2cS05NCAwIC0xNTkuNSA2NXQtNjUuNSAxNThxMCA1MCAyMSA5NHQ1OCA3NWwtNSA3MHEtNjEgLTM4IC05Ny41IC0xMDF0LTM2LjUgLTEzOHEwIC0xMTcgODMuNSAtMTk5LjV0MjAxLjUgLTgyLjVxODUgMCAxNTUgNDYNCnQxMDQgMTIxbC00MCA2OXEtMjAgLTkzIC0xMDEgLTE0NHEtNTUgLTMzIC0xMTggLTMzeiIgLz4NCiAgICA8Z2x5cGggZ2x5cGgtbmFtZT0idW5pRTY2MCIgdW5pY29kZT0iJiN4ZTY2MDsiIA0KZD0iTTc3MSAtMjA3bC0yMiAzNTdoLTQ3MWwtMjIgLTM1N2wtNTMgM2wyNiA0MDNoNTY5bDI2IC00MDN6TTIyMCAxNWg1ODB2LTQ3aC01ODB2NDd6TTUzMiA4MDJoLTM2cS00NSAwIC03NSAtMXQtNjcuNSAtNS41dC02MS41IC0xMnQtNDkgLTIxLjV0LTM5LjUgLTM0dC0yMy41IC00OXQtOSAtNjd2LTI3OXEwIC0xMDEgNiAtMTY0dDE5IC05OXQzMyAtNDkuNXQ0OC41IC0xNS41dDY2LjUgMXE0NCAzIDcwIDNoMTcycTI1IDAgNzEgLTMNCnEzOSAtMiA3MSAtMS41dDU2IDE1LjV0NDAgNDkuNXQyNCA5OXQ4IDE2NC41djI3OXEwIDMzIC02LjUgNTkuNXQtMjAgNDZ0LTI5IDMzLjV0LTQwIDIzdC00NyAxNXQtNTYgOC41dC02MC41IDMuNXQtNjUgMXpNNDAzIDIwM2gtMTQydjY1aDE0MnYtNjV6TTc2NiAyMDNoLTE0MnY2NWgxNDJ2LTY1ek03NjggMzYwaC01MjJ2Mjk2aDUyMnYtMjk2eiIgLz4NCiAgICA8Z2x5cGggZ2x5cGgtbmFtZT0idW5pRTY3QiIgdW5pY29kZT0iJiN4ZTY3YjsiIA0KZD0iTTUzNSA2MTJ2MTZxMCA2IC00LjUgMTAuNXQtMTAuNSA0LjVxLTQgMCAtNy41IC0ydC01LjUgLTUuNXQtMiAtNy41di0xNnEtMjkgLTIgLTU3IC05LjV0LTUyIC0yMXQtNDUuNSAtMzEuNXQtMzggLTQwdC0yOC41IC00N3QtMTguNSAtNTMuNXQtNi41IC01Ny41cTAgLTM5IDExLjUgLTc2LjV0MzMgLTY5LjV0NTIuNSAtNTdxMTIgLTkgMjEgM3EzIDMgMy41IDd0LTEgNy41dC00LjUgNi41cS0yNyAyMiAtNDYgNTAuNXQtMjkgNjF0LTEwIDY3LjUNCnEwIDk1IDY2LjUgMTYydDE2MS41IDY4aDJoMnEyMyAwIDQ1LjUgLTV0NDMgLTEzLjV0MzkgLTIxLjV0MzQgLTI4LjV0MjggLTM0dDIxIC0zOC41dDEzIC00M3Q0LjUgLTQ2cTAgLTE1IC0yIC0yOS41dC01LjUgLTI4LjV0LTkgLTI3LjV0LTEyLjUgLTI2LjV0LTE1LjUgLTI0LjV0LTE5IC0yMi41dC0yMS41IC0yMHEtMTIgLTEwIC0zIC0yMXExIC0yIDIuNSAtM3QzLjUgLTFsMiAtMmg0cTMgMCA1LjUgMXQ0LjUgMnEzMCAyNSA1MiA1Nw0KdDMzLjUgNjkuNXQxMS41IDc2LjVxMCA2OCAtMzMgMTI2LjV0LTg5IDk0dC0xMjQgMzkuNXpNNjg5IDMwaC0xNTR2MzA2aDMxcTYgMCAxMC41IDQuNXQ0LjUgMTF0LTQuNSAxMXQtMTAuNSA0LjVoLTkycS00IDAgLTcuNSAtMnQtNS41IC01LjV0LTIgLTcuNXEwIC0zIDEgLTZ0MyAtNXQ1IC0zLjV0NiAtMS41aDMxdi0zMDZoLTE1NHEtNCAwIC03LjUgLTJ0LTUuNSAtNS41dC0yIC04LjVxMCAtNiA0LjUgLTEwLjV0MTAuNSAtNC41aDMzOA0KcTQgMCA3LjUgMnQ1LjUgNS41dDIgNy41cTAgNyAtNC41IDExLjV0LTEwLjUgNC41eiIgLz4NCiAgICA8Z2x5cGggZ2x5cGgtbmFtZT0idW5pRTY3QyIgdW5pY29kZT0iJiN4ZTY3YzsiIA0KZD0iTTU5OSA2NWwxMiAxOTNsMzczIC0xODR2MTEybC0zNjYgMzQzdjIxNXEwIDQ3IC0zMS41IDk1dC03MS41IDQ4cS0yNyAwIC01MS41IC0yNHQtMzggLTU3dC0xMy41IC02MnYtMjE1bC0zNjcgLTM0M3YtMTEybDM2NyAxODRsMTUgLTIwOXEwIC01IDEgLTEzdi0ybC02NiAtNjB2LTY3bDE1NCA1MWwyIDFsMTQ4IC01MnY2N2wtNjkgNjJ6IiAvPg0KICAgIDxnbHlwaCBnbHlwaC1uYW1lPSJ1bmlFNkQ0IiB1bmljb2RlPSImI3hlNmQ0OyIgDQpkPSJNMzAzLjUgNjg1cTI5LjUgMCA1MC41IDIxdDIxIDUwdC0yMSA1MHQtNTAuNSAyMXQtNTAgLTIxdC0yMC41IC01MHQyMC41IC01MHQ1MCAtMjF6TTM4MCA2NzFoLTc2aC03N3EtNTIgMCAtNzEgLTE4LjV0LTE5IC03My41di0yMTdxMCAtMTUgOC41IC0yMy41dDE5LjUgLTguNXQyMCA4LjV0OSAyMy41bDUgMTk5aDE0di01NDVxMCAtMjYgMTkuNSAtMzd0MzkgMHQxOS41IDM3bDUgMzE2aDE1bDUgLTMxNnEwIC0yNiAxOS41IC0zN3QzOSAwDQp0MTkuNSAzN3Y1NDVoMTVsNSAtMTk5cTAgLTEyIDUuNSAtMjAuNXQxNCAtMTB0MTcgMHQxNC41IDEwdDYgMjAuNXYyMTdxMCA1NSAtMTkuNSA3My41dC03MS41IDE4LjV6TTcyOCA2ODZxMjkgMCA0OS41IDIxdDIwLjUgNTAuNXQtMjAuNSA1MC41dC00OS41IDIxdC00OS41IC0yMXQtMjAuNSAtNTAuNXQyMC41IC01MC41dDQ5LjUgLTIxek05MTkgNDA4bC02MSAyMDFxLTkgMjggLTM1IDQ1LjV0LTYzIDE3LjVoLTY0cS0zNyAwIC02MyAtMTcuNQ0KdC0zNSAtNDUuNWwtNjEgLTIwMXEtNiAtMjAgNCAtMzIuNXQyNSAtOC41dDIxIDIzbDY0IDE4M2g3bC04NyAtMzQxcS0zIC0xMCA3IC0xMGg3M3YtMjE2cTAgLTIxIDE2IC0yOS41dDMyLjUgMHQxNi41IDI5LjV2MjE3aDI1bC0xIC0yMTdxMCAtMjEgMTYuNSAtMjkuNXQzMyAwdDE2LjUgMjkuNXYyMTZoNzJxNSAwIDYuNSAzdDAuNSA3cS0xIDYgLTIzIDkxdC00MyAxNjdsLTIxIDgzaDdsNjQgLTE4M3E2IC0xOSAyMSAtMjN0MjUgOC41dDQgMzIuNXoNCiIgLz4NCiAgPC9mb250Pg0KPC9kZWZzPjwvc3ZnPg0K"
 
 /***/ },
-/* 228 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _StationWrapper = __webpack_require__(229);
-
-	var _StationWrapper2 = _interopRequireDefault(_StationWrapper);
-
-	//站点容器模块
-
-	var _EditPanel = __webpack_require__(236);
-
-	var _EditPanel2 = _interopRequireDefault(_EditPanel);
-
-	//编辑面板模块
-
-	var _AddPanel = __webpack_require__(237);
-
-	var _AddPanel2 = _interopRequireDefault(_AddPanel);
-
-	//添加站点模块
-
-	var _TimePanel = __webpack_require__(238);
-
-	var _TimePanel2 = _interopRequireDefault(_TimePanel);
-
-	//时间管理模块
-
-	var _commonAlert = __webpack_require__(240);
-
-	var _commonAlert2 = _interopRequireDefault(_commonAlert);
-
-	//提示信息模块
-
-	var _commonLineNumber = __webpack_require__(249);
-
-	var _commonLineNumber2 = _interopRequireDefault(_commonLineNumber);
-
-	//线路标记
-
-	var _commonDij = __webpack_require__(241);
-
-	var _commonDij2 = _interopRequireDefault(_commonDij);
-
-	//最短路径Dijstra算法模块
-
-	var _commonAjax = __webpack_require__(230);
-
-	var _commonAjax2 = _interopRequireDefault(_commonAjax);
-
-	//ajax模块
-
-	var _commonCommon = __webpack_require__(232);
-
-	//通用函数封装中的寻找索引模块
-
-	var Admin = (function (_React$Component) {
-	  _inherits(Admin, _React$Component);
-
-	  function Admin(props) {
-	    _classCallCheck(this, Admin);
-
-	    _get(Object.getPrototypeOf(Admin.prototype), 'constructor', this).call(this, props);
-	    this.state = {
-	      loading: true, //数据是否在loading中
-	      maxRender: 1,
-
-	      stationsData: [], //所有站点信息的数据集合
-	      timeData: [],
-	      transferData: [],
-	      idMap: {},
-
-	      path: [], //包含经过路径的集合
-	      lastSelected: 0, //之前选择节点
-	      nowSelected: 0, //现在选择节点
-
-	      showEdit: false, //是否显示编辑框
-	      editIndex: 0, //编辑站点的索引
-
-	      showAdd: false, //是否显示添加面板
-
-	      showTime: false,
-
-	      langCN: true,
-
-	      showAlert: false,
-	      alertText: '',
-	      alertTheme: 'success',
-	      alertAutoClose: true
-	    };
-
-	    this.dij = new _commonDij2['default'](380);
-	  }
-
-	  _createClass(Admin, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      var _this = this;
-
-	      this.initStationsData();
-	      this.initTimeData();
-	      this.timer1 = setInterval(function () {
-	        _this.setState({
-	          maxRender: _this.state.maxRender + 20
-	        });
-	      }, 1);
-	    }
-	  }, {
-	    key: 'initStationsData',
-	    value: function initStationsData() {
-	      var _this2 = this;
-
-	      _commonAjax2['default'].stationGet(function (result) {
-
-	        var tmpObj = {};
-	        for (var k in result) {
-	          tmpObj[result[k].uniquekey] = k;
-	        } //生成节点编号与数组索引的map表
-	        _this2.setState({ idMap: tmpObj, stationsData: result, loading: false }); //保存至idMap
-	      });
-	    }
-	  }, {
-	    key: 'initTimeData',
-	    value: function initTimeData() {
-	      var _this3 = this;
-
-	      _commonAjax2['default'].timeGet(function (timeResult) {
-
-	        _this3.dij.initSource(timeResult); //dij实例初始化数据
-	        _this3.setState({ timeData: timeResult });
-	      });
-	    }
-	  }, {
-	    key: 'openEditPanel',
-	    value: function openEditPanel(index) {
-	      var newState = {
-	        showEdit: true, //打开编辑窗口
-	        editIndex: index };
-	      //编辑的站点索引号
-	      this.setState(newState);
-	    }
-	  }, {
-	    key: 'onEditChange',
-	    value: function onEditChange(e, index) {
-	      var newStationsData = this.state.stationsData.concat([]);
-
-	      newStationsData[index][e.target.name] = e.target.value; //对应索引站点数据的
-	      this.setState({ stationsData: newStationsData });
-	    }
-	  }, {
-	    key: 'onEditConfirm',
-	    value: function onEditConfirm(e, index) {
-	      var _this4 = this;
-
-	      e.preventDefault();
-	      var editData = this.state.stationsData[index];
-	      _commonAjax2['default'].stationPost(editData, function () {
-	        _this4.setState({ showEdit: false, showAlert: true, alertText: '更新站点成功！', alertTheme: 'success', alertAutoClose: true });
-	      });
-	    }
-	  }, {
-	    key: 'onEditClose',
-	    value: function onEditClose(e) {
-	      this.setState({ showEdit: false });
-	    }
-	  }, {
-	    key: 'onEditDelete',
-	    value: function onEditDelete(e, index) {
-	      var _this5 = this;
-
-	      var id = this.state.stationsData[index].id;
-	      if (confirm('确定删除么?')) {
-	        _commonAjax2['default'].stationDel(id, function (result) {
-	          _this5.setState({ showEdit: false, showAlert: true, alertText: '删除站点成功！', alertTheme: 'danger', alertAutoClose: true });
-	          _this5.initStationsData();
-	        });
-	      }
-	    }
-	  }, {
-	    key: 'onClickLayer',
-	    value: function onClickLayer() {
-	      this.setState({
-	        lastSelected: this.state.nowSelected,
-	        nowSelected: 0,
-	        showEdit: false,
-	        showAdd: false,
-	        path: [],
-	        showAlert: false,
-	        showTime: false
-	      });
-	    }
-	  }, {
-	    key: 'openAddPanel',
-	    value: function openAddPanel(e) {
-	      e.stopPropagation();
-
-	      this.setState({ showAdd: true });
-	    }
-	  }, {
-	    key: 'onCloseAdd',
-	    value: function onCloseAdd() {
-	      this.setState({ showAdd: false });
-	    }
-	  }, {
-	    key: 'openTimePanel',
-	    value: function openTimePanel(e) {
-	      e.stopPropagation();
-	      this.setState({ showTime: true });
-	    }
-	  }, {
-	    key: 'updateStation',
-	    value: function updateStation(msg) {
-	      this.setState({ showAlert: true, showAdd: false, alertText: msg, alertTheme: 'success', alertAutoClose: true });
-	      this.initStationsData();
-	    }
-	  }, {
-	    key: 'updateTime',
-	    value: function updateTime(msg) {
-	      console.log('更新完成');
-	      this.setState({ showAlert: true, alertText: msg, alertAutoClose: true });
-	      this.initStationsData();
-	      this.initTimeData();
-	    }
-	  }, {
-	    key: 'onDismissAlert',
-	    value: function onDismissAlert() {
-	      this.setState({ showAlert: false });
-	    }
-	  }, {
-	    key: 'selectStation',
-	    value: function selectStation(endKey) {
-	      var start = this.state.nowSelected;
-	      var end = endKey;
-	      var path = this.state.path;
-
-	      if (start && end && start != end && path.length == 0) {
-	        //上一次点击与本次点击都有值且不相等，进入算法计算
-
-	        var _dij$getMin = this.dij.getMin(start, end);
-
-	        var result = _dij$getMin.result;
-	        var _path = _dij$getMin.path;
-	        //dij算法的获得最短时间距离和节点
-	        console.log('时间为' + result, '经过节点' + _path);
-	        if (result) {
-	          var sData = this.state.stationsData;
-	          var startIndex = (0, _commonCommon.findIndex)(sData, start, 'uniquekey');
-	          var endIndex = (0, _commonCommon.findIndex)(sData, end, 'uniquekey');
-	          var startName = sData[startIndex].chsName;
-	          var endName = sData[endIndex].chsName;
-
-	          this.setState({
-	            path: _path,
-	            showAlert: true,
-	            alertTheme: 'info',
-	            alertAutoClose: false,
-	            alertText: '从 ' + startName + ' 到 ' + endName + ' 途径' + _path.length + '站,预计' + result + '分钟到达'
-	          });
-	        }
-	      } else {
-
-	        this.setState({ lastSelected: this.state.nowSelected, nowSelected: endKey, path: [] });
-	      }
-	    }
-	  }, {
-	    key: 'changeLang',
-	    value: function changeLang(e) {
-	      this.setState({ langCN: !this.state.langCN });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this6 = this;
-
-	      if (this.state.loading) {
-	        return _react2['default'].createElement(
-	          'h1',
-	          null,
-	          '渲染中...'
-	        );
-	      } else {
-	        var progress = this.state.maxRender / this.state.stationsData.length * 100 > 100 ? 100 : this.state.maxRender / this.state.stationsData.length * 100;
-	        if (this.state.maxRender > this.state.stationsData.length) {
-	          //当加载完毕后清除定时器
-	          clearInterval(this.timer1);
-	        }
-
-	        var stations = this.state.stationsData.map(function (station, index) {
-	          if (index < _this6.state.maxRender) {
-	            return _react2['default'].createElement(_StationWrapper2['default'], _extends({ key: station.id }, station, { index: index, langCN: _this6.state.langCN, lastSelected: _this6.state.lastSelected == station.uniquekey, selected: _this6.state.nowSelected == station.uniquekey, pathNode: (0, _commonCommon.findIndex)(_this6.state.path, station.uniquekey) != -1, openEditPanel: _this6.openEditPanel.bind(_this6), selectStation: _this6.selectStation.bind(_this6), updateStation: _this6.updateStation.bind(_this6) }));
-	          }
-	        });
-	        var lines = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16].map(function (num) {
-	          return _react2['default'].createElement(_commonLineNumber2['default'], { key: num, line: num });
-	        });
-
-	        return _react2['default'].createElement(
-	          'div',
-	          null,
-	          _react2['default'].createElement(
-	            'div',
-	            { className: 'fixed-bar header' },
-	            _react2['default'].createElement(_commonAlert2['default'], { text: this.state.alertText, visible: this.state.showAlert, theme: this.state.alertTheme, autoClose: this.state.alertAutoClose, onDismiss: this.onDismissAlert.bind(this) })
-	          ),
-	          _react2['default'].createElement(
-	            'div',
-	            { className: 'main-container', onClick: function () {
-	                return _this6.onClickLayer();
-	              }, onDragOver: function (e) {
-	                return e.preventDefault();
-	              }, onDrop: function (e) {
-	                return e.preventDefault();
-	              } },
-	            _react2['default'].createElement(
-	              'h1',
-	              { style: { display: progress < 100 ? 'block' : 'none' } },
-	              '载入站点中',
-	              parseInt(progress),
-	              '%'
-	            ),
-	            _react2['default'].createElement(
-	              'h1',
-	              null,
-	              ' Metro上海地铁交通网络示意图'
-	            ),
-	            lines,
-	            stations,
-	            _react2['default'].createElement(_EditPanel2['default'], _extends({ theme: 'info', title: '编辑' }, this.state.stationsData[this.state.editIndex], { visible: this.state.showEdit, onEditChange: function (e) {
-	                return _this6.onEditChange(e, _this6.state.editIndex);
-	              }, onEditConfirm: function (e) {
-	                return _this6.onEditConfirm(e, _this6.state.editIndex);
-	              }, onEditDelete: function (e) {
-	                return _this6.onEditDelete(e, _this6.state.editIndex);
-	              }, onEditClose: function (e) {
-	                return _this6.onEditClose(e);
-	              }, updateStation: this.updateStation.bind(this) })),
-	            _react2['default'].createElement(_AddPanel2['default'], { theme: 'warning', title: '添加站点', visible: this.state.showAdd, onClose: function (e) {
-	                return _this6.onCloseAdd(e);
-	              }, updateStation: this.updateStation.bind(this) }),
-	            _react2['default'].createElement(_TimePanel2['default'], { theme: 'success', title: '时间管理列表', visible: this.state.showTime, updateTime: this.updateTime.bind(this), tData: this.state.timeData, sData: this.state.stationsData, idMap: this.state.idMap })
-	          ),
-	          _react2['default'].createElement(
-	            'div',
-	            { className: 'fixed-bar footer' },
-	            _react2['default'].createElement(
-	              'button',
-	              { className: 'btn btn-lg btn-warning change-lang', onClick: function (e) {
-	                  return _this6.changeLang(e);
-	                } },
-	              '切换语言'
-	            ),
-	            _react2['default'].createElement(
-	              'button',
-	              { onClick: function (e) {
-	                  return _this6.openAddPanel(e);
-	                }, className: 'btn btn-lg btn-info add-btn' },
-	              '添加站点'
-	            ),
-	            _react2['default'].createElement(
-	              'button',
-	              { onClick: function (e) {
-	                  return _this6.openTimePanel(e);
-	                }, className: 'btn btn-lg btn-success time-btn' },
-	              '时间管理'
-	            )
-	          )
-	        );
-	      }
-	    }
-	  }]);
-
-	  return Admin;
-	})(_react2['default'].Component);
-
-	exports['default'] = Admin;
-	module.exports = exports['default'];
-
-/***/ },
+/* 228 */,
 /* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -25412,8 +25014,6 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
@@ -25422,2308 +25022,27 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	//引入函数
-
-	var _commonAjax = __webpack_require__(230);
-
-	var _commonAjax2 = _interopRequireDefault(_commonAjax);
-
-	var _commonCommon = __webpack_require__(232);
-
-	//引入子组件
-
-	var _StationNodeJsx = __webpack_require__(233);
-
-	var _StationNodeJsx2 = _interopRequireDefault(_StationNodeJsx);
-
-	var _StationNameJsx = __webpack_require__(234);
-
-	var _StationNameJsx2 = _interopRequireDefault(_StationNameJsx);
-
-	var _StationLineJsx = __webpack_require__(235);
-
-	var _StationLineJsx2 = _interopRequireDefault(_StationLineJsx);
-
-	var StationWrapper = (function (_React$Component) {
-	  _inherits(StationWrapper, _React$Component);
-
-	  function StationWrapper(props) {
-	    _classCallCheck(this, StationWrapper);
-
-	    _get(Object.getPrototypeOf(StationWrapper.prototype), 'constructor', this).call(this, props);
-	    this.state = {
-	      left: this.props.left,
-	      top: this.props.top,
-
-	      nodeType: this.props.nodeType,
-	      nodeAngel: this.props.nodeAngel,
-
-	      lineAngel: this.props.lineAngel,
-	      lineWidth: this.props.lineWidth,
-
-	      line2Angel: this.props.line2Angel,
-	      line2Width: this.props.line2Width
-	    };
-	  }
-
-	  _createClass(StationWrapper, [{
-	    key: 'shouldComponentUpdate',
-	    value: function shouldComponentUpdate(nextProps, nextState) {
-	      //渲染判定
-	      var res = (0, _commonCommon.compare)(nextProps, this.props); //浅比较react属性
-	      var res2 = (0, _commonCommon.compare)(nextState, this.state); //浅比较react状态
-	      var shouldRender = !(res && res2); //返回false表示有不同的属性值，需要重新渲染
-	      return shouldRender;
-	    }
-	  }, {
-	    key: 'onNodeDrag',
-	    value: function onNodeDrag(e) {
-	      var x = e.pageX;
-	      var y = e.pageY;
-
-	      this.setState({ left: x, top: y });
-	    }
-	  }, {
-	    key: 'onNodeDragEnd',
-	    value: function onNodeDragEnd(e) {
-	      var _this = this;
-
-	      //数据更新
-	      var data = {
-	        id: this.props.id,
-	        left: this.state.left,
-	        top: this.state.top
-	      };
-	      _commonAjax2['default'].stationPost(data, function () {
-	        _this.props.updateStation('站点位置信息已更新！');
-	      });
-	    }
-	  }, {
-	    key: 'onNodeWheel',
-	    value: function onNodeWheel(e) {
-	      var _this2 = this;
-
-	      if (e.altKey) {
-	        (function () {
-	          e.preventDefault();
-	          var newAngel = _this2.state.nodeAngel + Math.sign(e.deltaY) * 45; //根据滚轮的上下切换旋转角度
-	          //数据更新
-	          var data = {
-	            id: _this2.props.id,
-	            nodeAngel: newAngel % 360
-	          };
-	          _commonAjax2['default'].stationPost(data, function () {
-	            _this2.setState({ nodeAngel: newAngel % 360 });
-
-	            _this2.props.updateStation('站点角度值已更新！');
-	          });
-	        })();
-	      }
-	    }
-	  }, {
-	    key: 'onNodeClick',
-	    value: function onNodeClick(e) {
-	      e.stopPropagation();
-	      this.props.selectStation(this.props.uniquekey); //传递给父组件站点编号
-	    }
-	  }, {
-	    key: 'onNodeContext',
-	    value: function onNodeContext(e) {
-	      e.preventDefault();
-	      this.props.openEditPanel(this.props.index);
-	    }
-	  }, {
-	    key: 'onNameClick',
-	    value: function onNameClick(e) {
-	      e.stopPropagation();
-	      this.props.selectStation(this.props.uniquekey);
-	    }
-	  }, {
-	    key: 'onNameContext',
-	    value: function onNameContext(e) {
-	      e.preventDefault();
-	      this.props.openEditPanel(this.props.index);
-	    }
-	  }, {
-	    key: 'onLineDrag',
-	    value: function onLineDrag(e, isLine2) {
-	      var newAngel = (0, _commonCommon.calcAngel)(e);
-	      !isLine2 //判定是更新原始线还是第二线
-	      ? this.setState({ lineAngel: newAngel }) : this.setState({ line2Angel: newAngel });
-	    }
-	  }, {
-	    key: 'onLineDragEnd',
-	    value: function onLineDragEnd(e, isLine2) {
-	      var _this3 = this;
-
-	      //线路角度数据更新
-	      var lineAngelNum = !isLine2 ? 'lineAngel' : 'line2Angel'; //判定是更新原始线还是第二线
-	      var data = _defineProperty({
-	        id: this.props.id
-	      }, lineAngelNum, this.state[lineAngelNum]);
-	      _commonAjax2['default'].stationPost(data, function () {
-	        _this3.props.updateStation('线路角度值已更新！');
-	      });
-	    }
-	  }, {
-	    key: 'onLineWheel',
-	    value: function onLineWheel(e, isLine2) {
-	      var _this4 = this;
-
-	      if (e.altKey) {
-	        e.preventDefault();
-	        var lineWidthNum = !isLine2 ? 'lineWidth' : 'line2Width'; //判定是更新原始线还是第二线
-	        var newLineWidth = this.state[lineWidthNum] - Math.sign(e.deltaY) * 0.25; //Math.sign返回正数1或负数-1
-	        this.setState(_defineProperty({}, lineWidthNum, newLineWidth < 1.5 ? 1.5 : newLineWidth));
-	        //线路长度数据更新
-	        var data = _defineProperty({
-	          id: this.props.id
-	        }, lineWidthNum, newLineWidth);
-	        _commonAjax2['default'].stationPost(data, function () {
-	          _this4.props.updateStation('线路长度值已更新！');
-	        });
-	      }
-	    }
-	  }, {
-	    key: 'onLineContext',
-	    value: function onLineContext(e) {
-	      e.preventDefault();
-	      this.props.openEditPanel(this.props.index);
-	    }
-	  }, {
-	    key: 'initConfig',
-	    value: function initConfig() {
-
-	      this.nodeOption = {
-	        nodeAngel: this.state.nodeAngel,
-
-	        line: this.props.line,
-	        nodeType: this.props.nodeType,
-	        selected: this.props.selected,
-	        pathNode: this.props.pathNode
-	      };
-
-	      this.nameOption = {
-	        id: this.props.id,
-	        nameLeft: this.props.nameLeft,
-	        nameTop: this.props.nameTop,
-	        nameAngel: this.props.nameAngel,
-	        nameVisible: this.props.nameVisible,
-	        assist: this.props.assist,
-	        wc: this.props.wc,
-	        chsName: this.props.chsName,
-	        engName: this.props.engName,
-	        langCN: this.props.langCN
-	      };
-
-	      this.lineOption = {
-	        angel: this.state.lineAngel,
-	        len: this.state.lineWidth,
-
-	        lineNum: this.props.line,
-	        offset: this.props.lineOffset,
-	        visible: true,
-	        uniquekey: this.props.uniquekey,
-	        nodeAngel: this.state.nodeAngel
-	      };
-
-	      this.line2Option = {
-	        angel: this.state.line2Angel,
-	        len: this.state.line2Width,
-	        nodeAngel: this.state.nodeAngel,
-
-	        lineNum: this.props.line,
-	        offset: this.props.line2Offset,
-	        visible: parseInt(this.props.line2Visible), //是否显示第二线
-	        uniquekey: this.props.uniquekey
-	      };
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this5 = this;
-
-	      this.initConfig();
-
-	      return _react2['default'].createElement(
-	        'div',
-	        {
-	          style: {
-	            left: this.state.left,
-	            top: this.state.top
-	          },
-	          className: 'station-wrapper' },
-	        _react2['default'].createElement(_StationNodeJsx2['default'], _extends({}, this.nodeOption, {
-	          handleDragEnd: function (e) {
-	            return _this5.onNodeDragEnd(e);
-	          },
-	          handleDrag: function (e) {
-	            return _this5.onNodeDrag(e);
-	          },
-	          handleClick: function (e) {
-	            return _this5.onNodeClick(e);
-	          },
-	          handleContextMenu: function (e) {
-	            return _this5.onNodeContext(e);
-	          },
-	          handleWheel: function (e) {
-	            return _this5.onNodeWheel(e);
-	          } })),
-	        _react2['default'].createElement(_StationNameJsx2['default'], _extends({}, this.nameOption, {
-	          handleClick: function (e) {
-	            return _this5.onNameClick(e);
-	          },
-	          handleDragEnd: function () {
-	            return _this5.onNameDragEnd();
-	          },
-	          handleDrag: function (e) {
-	            return _this5.onNameDrag(e);
-	          },
-	          handleWheel: function (e) {
-	            return _this5.onNameWheel(e);
-	          },
-	          handleContextMenu: function (e) {
-	            return _this5.onNameContext(e);
-	          } })),
-	        _react2['default'].createElement(_StationLineJsx2['default'], _extends({}, this.lineOption, {
-	          handleDragEnd: function (e) {
-	            return _this5.onLineDragEnd(e);
-	          },
-	          handleDrag: function (e) {
-	            return _this5.onLineDrag(e);
-	          },
-	          handleWheel: function (e) {
-	            return _this5.onLineWheel(e);
-	          },
-	          handleContextMenu: function (e) {
-	            return _this5.onLineContext(e);
-	          } })),
-	        _react2['default'].createElement(_StationLineJsx2['default'], _extends({}, this.line2Option, {
-	          handleDragEnd: function (e) {
-	            return _this5.onLineDragEnd(e, true);
-	          },
-	          handleDrag: function (e) {
-	            return _this5.onLineDrag(e, true);
-	          },
-	          handleWheel: function (e) {
-	            return _this5.onLineWheel(e, true);
-	          },
-	          handleContextMenu: function (e) {
-	            return _this5.onLineContext(e);
-	          } }))
-	      );
-	    }
-	  }]);
-
-	  return StationWrapper;
-	})(_react2['default'].Component);
-
-	exports['default'] = StationWrapper;
-	module.exports = exports['default'];
-
-/***/ },
-/* 230 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _minAjax = __webpack_require__(231);
-
-	var _minAjax2 = _interopRequireDefault(_minAjax);
-
-	//ajax 请求对象包装
-
-	var host = 'http://localhost:3000'; //后台请求地址
-
-	var ajax = {
-	    stationGet: function stationGet(fnDone) {
-	        //获得站点数据
-	        (0, _minAjax2['default'])({
-	            url: host + '/station',
-	            success: function success(result) {
-	                fnDone(result);
-	            }
-	        });
-	    },
-	    stationPost: function stationPost(data, fnDone) {
-	        //更新站点数据
-	        (0, _minAjax2['default'])({
-	            url: host + '/station',
-	            type: 'post',
-	            data: data,
-	            success: function success(result) {
-	                if (result == 'ok') {
-	                    fnDone();
-	                }
-	            }
-	        });
-	    },
-	    stationPut: function stationPut(data, fnDone) {
-	        (0, _minAjax2['default'])({
-	            url: host + '/station',
-	            type: 'put',
-	            data: data,
-	            success: function success(result) {
-	                if (result) {
-	                    fnDone(result);
-	                }
-	            }
-	        });
-	    },
-	    stationDel: function stationDel(id, fnDone) {
-	        (0, _minAjax2['default'])({
-	            url: host + '/station',
-	            type: 'delete',
-	            data: {
-	                id: id
-	            },
-	            success: function success(result) {
-	                if (result == 'ok') {
-	                    fnDone();
-	                }
-	            }
-	        });
-	    },
-	    maxKeyGet: function maxKeyGet(fnDone) {
-	        (0, _minAjax2['default'])({
-	            url: host + '/maxkey',
-	            type: 'get',
-	            success: function success(data) {
-	                if (data.result == 'ok') {
-	                    fnDone(data.maxkey);
-	                }
-	            }
-	        });
-	    },
-	    timeGet: function timeGet(fnDone) {
-	        (0, _minAjax2['default'])({
-	            url: host + '/time',
-	            type: 'get',
-	            success: function success(result) {
-	                fnDone(result);
-	            }
-	        });
-	    },
-
-	    timePut: function timePut(data, fnDone) {
-	        (0, _minAjax2['default'])({
-	            url: host + '/time',
-	            type: 'put',
-	            data: data,
-	            success: function success(result) {
-	                if (result) {
-	                    fnDone(result);
-	                }
-	            }
-	        });
-	    },
-	    timeDel: function timeDel(data, fnDone) {
-	        (0, _minAjax2['default'])({
-	            url: host + '/time',
-	            type: 'delete',
-	            data: data,
-	            success: function success(result) {
-	                if (result == 'ok') {
-	                    fnDone();
-	                }
-	            }
-	        });
-	    }
-
-	};
-
-	exports['default'] = ajax;
-	module.exports = exports['default'];
-
-/***/ },
-/* 231 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-	var minAjax = function minAjax(config) {
-	    if (!config.url) {
-	        throw new Error('请填写请求url地址！');
-	    }
-	    if (!config.success) {
-	        throw new Error('请填写回调函数！');
-	    }
-	    var option = {
-	        type: config.type || 'GET', //请求方式 默认为get
-	        data: reformatParams(config.data), //数据格式化为xmlHttp对象格式
-	        url: config.url, //请求地址
-	        success: config.success };
-
-	    //成功的回调
-	    var xmlHttp = getXmlHttpObj();
-
-	    xmlHttp.open(option.type.toUpperCase(), option.url, true); //发送数据
-	    if (option.type.toUpperCase() == 'GET') {
-	        xmlHttp.send(null);
-	    } else {
-	        xmlHttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); //设置头信息
-	        xmlHttp.send(option.data); //发送数据
-	    }
-	    xmlHttp.onreadystatechange = function () {
-	        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-	            var _resultValue = undefined;
-	            try {
-	                _resultValue = JSON.parse(xmlHttp.responseText); //如果能够json解析使用json
-	            } catch (e) {
-	                _resultValue = xmlHttp.responseText; //不能则返回普通文本字符串内容
-	            }
-	            option.success(_resultValue);
-	        }
-	    };
-	};
-
-	var reformatParams = function reformatParams(data) {
-	    var _arr = [];
-	    for (var k in data) {
-	        _arr.push(k + '=' + data[k]);
-	    }
-	    return _arr.join('&'); //格式化为name=lee&pwd=3的形式
-	};
-
-	var getXmlHttpObj = function getXmlHttpObj() {
-	    var xmlHttp = undefined;
-	    try {
-	        xmlHttp = new XMLHttpRequest();
-	    } catch (e) {
-	        try {
-	            xmlHttp = new ActiveXObject('Msxml2.XMLHTTP');
-	        } catch (e) {
-	            try {
-	                xmlHttp = new ActiveXObject('Microsoft.XMLHTTP');
-	            } catch (e) {
-	                alert('您的浏览器不支持ajax请求！');
-	            }
-	        }
-	    }
-	    return xmlHttp;
-	};
-
-	exports['default'] = minAjax;
-	module.exports = exports['default'];
-
-/***/ },
-/* 232 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-	var calcAngel = function calcAngel(e) {
-	    var direction = arguments.length <= 1 || arguments[1] === undefined ? 'right' : arguments[1];
-
-	    var parentNode = e.target.parentNode; //获得父节点
-	    var nodeX = parentNode.offsetLeft;
-	    var nodeY = parentNode.offsetTop;
-	    var x = e.pageX;
-	    var y = e.pageY;
-	    var a = x - nodeX;
-	    var b = y - nodeY;
-	    //获得鼠标点相对于站点组件的横纵坐标
-	    var c = Math.hypot(a, b); //获得斜边值
-	    var sinVal = b / c; //得出余弦值
-	    var newAngel = Math.asin(sinVal) * 180 / Math.PI; //使用反正弦函数获得角度
-
-	    switch (direction) {//判断方向
-	        case 'right':
-	            x < nodeX ? newAngel = 180 - newAngel : newAngel;
-	            break;
-	        case 'left':
-	            newAngel = -newAngel;
-	            x > nodeX ? newAngel = 180 - newAngel : -newAngel;
-	            break;
-	    }
-	    for (var i = -2; i <= 6; i++) {
-	        //磁性吸附直角 -45*2 -45*1。。。-45*6
-	        Math.abs(newAngel / 45 - i) < 0.10 ? newAngel = i * 45 : newAngel;
-	    }
-	    return newAngel;
-	};
-
-	var findIndex = function findIndex(obj, target, child) {
-	    //寻找target元素是否存在于对象obj中,child参数用于二维对象下的某个下标值
-	    for (var k in obj) {
-	        if (child) {
-	            if (obj[k][child] == target) {
-	                return Number(k);
-	            }
-	        } else {
-	            if (obj[k] == target) {
-	                return Number(k);
-	            }
-	        }
-	    }
-	    return -1;
-	};
-
-	//浅比较两个对象属性相等函数
-	function compare(obj1, obj2) {
-	    for (var k in obj1) {
-	        if (typeof obj1[k] !== 'function' && typeof obj1[k] !== 'object') {
-	            if (obj1[k] !== obj2[k]) {
-	                return false;
-	            }
-	        }
-	    }
-	    return true;
-	}
-	exports['default'] = { calcAngel: calcAngel, findIndex: findIndex, compare: compare };
-	module.exports = exports['default'];
-
-/***/ },
-/* 233 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var StationNode = (function (_React$Component) {
-	  _inherits(StationNode, _React$Component);
-
-	  function StationNode(props) {
-	    _classCallCheck(this, StationNode);
-
-	    _get(Object.getPrototypeOf(StationNode.prototype), 'constructor', this).call(this, props);
-	  }
-
-	  _createClass(StationNode, [{
-	    key: 'onNodeDragStart',
-	    value: function onNodeDragStart(e) {
-	      e.dataTransfer.setData('Text', 'node');
-	      e.dataTransfer.setDragImage(this.refs['null'], 0, 0); //设置默认的浏览器样式不可见，拖动一个无宽高的元素
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this = this;
-
-	      var stationNodeClass = 's-node s-' + (this.props.nodeType == 'normal' ? 'round' : 'ellipse') + ' line-node-' + this.props.line;
-	      return _react2['default'].createElement(
-	        'div',
-	        {
-	          ref: 'node',
-	          className: stationNodeClass,
-	          style: {
-	            borderColor: this.props.nodeType == 'transfer' ? '#000' : '',
-	            transform: 'translate(-50%,-50%) rotate(' + this.props.nodeAngel + 'deg)',
-	            WebkitTransform: 'translate(-50%,-50%) rotate(' + this.props.nodeAngel + 'deg)',
-	            zIndex: this.props.pathNode || this.props.selected ? 4 : 3
-	          },
-	          onClick: this.props.handleClick,
-	          onContextMenu: this.props.handleContextMenu,
-	          draggable: 'true',
-	          onDrag: this.props.handleDrag,
-	          onDragStart: function (e) {
-	            return _this.onNodeDragStart(e);
-	          },
-	          onDragEnd: this.props.handleDragEnd,
-	          onWheel: this.props.handleWheel },
-	        _react2['default'].createElement('span', {
-	          className: 's-node-clicked',
-	          style: { display: this.props.selected && !this.props.pathNode ? 'block' : 'none' } }),
-	        _react2['default'].createElement('span', {
-	          className: 's-node-path blink',
-	          style: { display: this.props.pathNode ? 'block' : 'none', animationDelay: '200ms' } }),
-	        _react2['default'].createElement('span', { ref: 'null' })
-	      );
-	    }
-	  }]);
-
-	  return StationNode;
-	})(_react2['default'].Component);
-
-	exports['default'] = StationNode;
-	module.exports = exports['default'];
-
-/***/ },
-/* 234 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _commonAjax = __webpack_require__(230);
-
-	var _commonAjax2 = _interopRequireDefault(_commonAjax);
-
-	var StationName = (function (_React$Component) {
-	  _inherits(StationName, _React$Component);
-
-	  function StationName(props) {
-	    _classCallCheck(this, StationName);
-
-	    _get(Object.getPrototypeOf(StationName.prototype), 'constructor', this).call(this, props);
-	    this.state = {
-	      nameLeft: this.props.nameLeft,
-	      nameTop: this.props.nameTop,
-	      nameAngel: this.props.nameAngel
-	    };
-	  }
-
-	  _createClass(StationName, [{
-	    key: 'handleDragStart',
-	    value: function handleDragStart(e) {
-	      e.dataTransfer.setDragImage(this.refs['null'], 0, 0);
-	      var l = e.target.offsetLeft;
-	      var t = e.target.offsetTop;
-	      //拖动开始时记录下鼠标相对于当前容器的相对位置
-	      var _ref = [e.pageX - l, e.pageY - t];
-	      this.offsetX = _ref[0];
-	      this.offsetY = _ref[1];
-	    }
-	  }, {
-	    key: 'handleDrag',
-	    value: function handleDrag(e) {
-	      var x = e.pageX - this.offsetX;
-	      var y = e.pageY - this.offsetY;
-	      var w = e.target.offsetWidth;
-	      var h = e.target.offsetHeight;
-
-	      if (Math.hypot(x + w / 2, y + h / 2) < w) {
-	        //圆形公式 名称在名称容器长度范围的的半径限制内移动 Math.hypot为平方根
-	        this.setState({
-	          nameLeft: x,
-	          nameTop: y
-	        });
-	      }
-	    }
-	  }, {
-	    key: 'handleDragEnd',
-	    value: function handleDragEnd(e) {
-	      var ajaxData = {
-	        id: this.props.id,
-	        nameLeft: this.state.nameLeft,
-	        nameTop: this.state.nameTop
-	      };
-	      _commonAjax2['default'].stationPost(ajaxData, function () {
-	        console.log('名称位置更新完毕！');
-	      });
-	    }
-	  }, {
-	    key: 'handleWheel',
-	    value: function handleWheel(e) {
-	      if (e.altKey) {
-	        e.preventDefault();
-	        var θ = this.state.nameAngel + Math.sign(e.deltaY) * 45;
-	        this.setState({
-	          nameAngel: θ % 360
-	        });
-	        _commonAjax2['default'].stationPost({ id: this.props.id, nameAngel: θ % 360 }, function () {
-	          console.log('角度更新完毕！');
-	        });
-	      }
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this = this;
-
-	      if (!Number(this.props.nameVisible)) {
-	        return null;
-	      } else {
-	        var style = { left: this.state.nameLeft, top: this.state.nameTop,
-	          transform: 'rotate(' + this.state.nameAngel + 'deg)',
-	          WebkitTransform: 'rotate(' + this.state.nameAngel + 'deg)' };
-	        return _react2['default'].createElement(
-	          'div',
-	          {
-	            ref: 'name',
-	            className: 's-name-area',
-	            draggable: 'true',
-	            style: style,
-	            onWheel: function (e) {
-	              return _this.handleWheel(e);
-	            },
-	            onContextMenu: this.props.handleContextMenu,
-	            onDragStart: function (e) {
-	              return _this.handleDragStart(e);
-	            },
-	            onDrag: function (e) {
-	              return _this.handleDrag(e);
-	            },
-	            onDragEnd: function (e) {
-	              return _this.handleDragEnd(e);
-	            },
-
-	            onClick: this.props.handleClick },
-	          _react2['default'].createElement(
-	            'span',
-	            { style: { fontSize: this.props.langCN ? '0.9em' : '0.6em' } },
-	            this.props.langCN ? this.props.chsName : this.props.engName,
-	            _react2['default'].createElement('i', {
-	              className: 'subicon icon-assist',
-	              style: {
-	                background: Number(this.props.assist) ? '#009300' : '#666'
-	              } }),
-	            _react2['default'].createElement('i', {
-	              className: 'subicon icon-wc',
-	              style: {
-	                background: Number(this.props.wc) ? '#009300' : '#666'
-	              } })
-	          ),
-	          _react2['default'].createElement('span', { ref: 'null' })
-	        );
-	      }
-	    }
-	  }]);
-
-	  return StationName;
-	})(_react2['default'].Component);
-
-	exports['default'] = StationName;
-	module.exports = exports['default'];
-
-/***/ },
-/* 235 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var StationLine = (function (_React$Component) {
-	  _inherits(StationLine, _React$Component);
-
-	  function StationLine(props) {
-	    _classCallCheck(this, StationLine);
-
-	    _get(Object.getPrototypeOf(StationLine.prototype), 'constructor', this).call(this, props);
-	  }
-
-	  _createClass(StationLine, [{
-	    key: 'onLineDragStart',
-	    value: function onLineDragStart(e) {
-	      e.dataTransfer.setData('Text', 'line');
-	      e.dataTransfer.setDragImage(this.refs['null'], 0, 0);
-	    }
-	  }, {
-	    key: 'calcLinePosition',
-	    value: function calcLinePosition() {
-	      var sin = Math.sin;
-	      var cos = Math.cos;
-	      var abs = Math.abs;
-	      var PI = Math.PI;
-	      //提取数学函数和pi
-	      var angel = Number(this.props.nodeAngel);
-	      var offset = Number(this.props.offset);
-
-	      if (offset) {
-	        //偏移量不为0时计算线路的起点坐标
-	        var θ = angel / 180 * PI; //将角度转为弧度计算
-	        var r = offset; //半径
-	        var x = r / cos(θ);
-	        var y = r / sin(θ);
-	        //通过半径和角度计算
-	        if (abs(x) > 1000) {
-	          x = 0;
-	        }
-	        if (abs(y) > 1000) {
-	          y = 0;
-	        }
-	        //设定线路的偏移量
-	        var _ref = [x, y];
-	        this.x = _ref[0];
-	        this.y = _ref[1];
-	      } else {
-	          //没有偏移量起点坐标直接为0,0
-	          var _ref2 = [0, 0];
-	          this.x = _ref2[0];
-	          this.y = _ref2[1];
-	        }
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this = this;
-
-	      this.calcLinePosition();
-
-	      if (!this.props.visible) {
-	        return null;
-	      } else {
-	        var transformStyle = 'translateY(-50%) rotateZ(' + this.props.angel + 'deg)';
-	        var lineStyle = {
-	          WebkitTransform: transformStyle,
-	          MozTransform: transformStyle,
-	          transform: transformStyle,
-	          left: this.x,
-	          top: this.y,
-	          width: this.props.len + 'em'
-	        };
-	        return _react2['default'].createElement(
-	          'div',
-	          {
-	            className: 's-line angel-right line-' + this.props.lineNum,
-	            style: lineStyle,
-	            draggable: 'true',
-	            onWheel: this.props.handleWheel,
-	            onContextMenu: this.props.handleContextMenu,
-	            onDragStart: function (e) {
-	              return _this.onLineDragStart(e);
-	            },
-	            onDrag: this.props.handleDrag,
-	            onDragEnd: this.props.handleDragEnd },
-	          _react2['default'].createElement('span', { ref: 'null' }),
-	          _react2['default'].createElement(
-	            'span',
-	            { style: { fontSize: '0.5em' } },
-	            this.props.uniquekey
-	          )
-	        );
-	      }
-	    }
-	  }]);
-
-	  return StationLine;
-	})(_react2['default'].Component);
-
-	exports['default'] = StationLine;
-	module.exports = exports['default'];
-
-/***/ },
-/* 236 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _commonAjax = __webpack_require__(230);
-
-	var _commonAjax2 = _interopRequireDefault(_commonAjax);
-
-	var EditPanel = (function (_React$Component) {
-	  _inherits(EditPanel, _React$Component);
-
-	  function EditPanel(props) {
-	    _classCallCheck(this, EditPanel);
-
-	    _get(Object.getPrototypeOf(EditPanel.prototype), 'constructor', this).call(this, props);
-	  }
-
-	  _createClass(EditPanel, [{
-	    key: 'render',
-	    value: function render() {
-	      var _this = this;
-
-	      if (!this.props.visible) {
-	        return null;
-	      } else {
-	        return _react2['default'].createElement(
-	          'div',
-	          { className: 'modal-layer edit-panel-layer' },
-	          _react2['default'].createElement(
-	            'div',
-	            {
-	              className: 'panel-' + this.props.theme + ' edit-panel panel fadein',
-	              onClick: function (e) {
-	                return e.stopPropagation();
-	              } },
-	            _react2['default'].createElement(
-	              'div',
-	              { className: 'panel-heading' },
-	              _react2['default'].createElement(
-	                'h3',
-	                { className: 'panel-title' },
-	                this.props.title
-	              )
-	            ),
-	            _react2['default'].createElement(
-	              'div',
-	              { className: 'panel-body' },
-	              _react2['default'].createElement(
-	                'form',
-	                { method: 'post' },
-	                _react2['default'].createElement(
-	                  'div',
-	                  { className: 'form-group' },
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'input-group' },
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      _react2['default'].createElement(
-	                        'strong',
-	                        null,
-	                        '站点唯一编号'
-	                      )
-	                    ),
-	                    _react2['default'].createElement('input', {
-	                      onChange: this.props.onEditChange,
-	                      name: 'uniquekey',
-	                      className: 'form-control',
-	                      defaultValue: this.props.uniquekey,
-	                      disabled: true })
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'input-group' },
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      _react2['default'].createElement(
-	                        'strong',
-	                        null,
-	                        '线路'
-	                      )
-	                    ),
-	                    _react2['default'].createElement('input', {
-	                      onChange: this.props.onEditChange,
-	                      name: 'line',
-	                      className: 'form-control line-font-' + this.props.line,
-	                      type: 'number',
-	                      min: 1,
-	                      max: 16,
-	                      defaultValue: this.props.line,
-	                      required: true }),
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-btn' },
-	                      _react2['default'].createElement(
-	                        'button',
-	                        { className: 'btn line-' + this.props.line },
-	                        this.props.line
-	                      )
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'input-group' },
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      _react2['default'].createElement(
-	                        'strong',
-	                        null,
-	                        '中文名'
-	                      )
-	                    ),
-	                    _react2['default'].createElement('input', {
-	                      onChange: this.props.onEditChange,
-	                      name: 'chsName',
-	                      className: 'form-control',
-	                      type: 'text',
-	                      placeholder: '站点中文名称',
-	                      defaultValue: this.props.chsName,
-	                      required: true })
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'input-group' },
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      _react2['default'].createElement(
-	                        'strong',
-	                        null,
-	                        '英文名'
-	                      )
-	                    ),
-	                    _react2['default'].createElement('input', {
-	                      onChange: this.props.onEditChange,
-	                      name: 'engName',
-	                      className: 'form-control',
-	                      type: 'text',
-	                      placeholder: '站点英文名称',
-	                      defaultValue: this.props.engName,
-	                      required: true })
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'input-group' },
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      _react2['default'].createElement(
-	                        'strong',
-	                        null,
-	                        '残疾电梯'
-	                      )
-	                    ),
-	                    _react2['default'].createElement(
-	                      'select',
-	                      {
-	                        onChange: this.props.onEditChange,
-	                        name: 'assist',
-	                        className: 'form-control',
-	                        defaultValue: this.props.assist },
-	                      _react2['default'].createElement(
-	                        'option',
-	                        { value: 1 },
-	                        '有'
-	                      ),
-	                      _react2['default'].createElement(
-	                        'option',
-	                        { value: 0 },
-	                        '无'
-	                      )
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'input-group' },
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      _react2['default'].createElement(
-	                        'strong',
-	                        null,
-	                        '站内厕所'
-	                      )
-	                    ),
-	                    _react2['default'].createElement(
-	                      'select',
-	                      {
-	                        onChange: this.props.onEditChange,
-	                        name: 'wc',
-	                        className: 'form-control',
-	                        defaultValue: this.props.wc },
-	                      _react2['default'].createElement(
-	                        'option',
-	                        { value: 1 },
-	                        '有'
-	                      ),
-	                      _react2['default'].createElement(
-	                        'option',
-	                        { value: 0 },
-	                        '无'
-	                      )
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'input-group' },
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      '站点类型'
-	                    ),
-	                    _react2['default'].createElement(
-	                      'select',
-	                      {
-	                        onChange: this.props.onEditChange,
-	                        name: 'nodeType',
-	                        className: 'form-control',
-	                        defaultValue: this.props.nodeType },
-	                      _react2['default'].createElement(
-	                        'option',
-	                        { value: 'normal' },
-	                        '普通站点'
-	                      ),
-	                      _react2['default'].createElement(
-	                        'option',
-	                        { value: 'transfer' },
-	                        '换乘站点'
-	                      )
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'input-group' },
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      '名称可见'
-	                    ),
-	                    _react2['default'].createElement(
-	                      'select',
-	                      {
-	                        onChange: this.props.onEditChange,
-	                        name: 'nameVisible',
-	                        className: 'form-control',
-	                        defaultValue: this.props.nameVisible },
-	                      _react2['default'].createElement(
-	                        'option',
-	                        { value: 1 },
-	                        '可见'
-	                      ),
-	                      _react2['default'].createElement(
-	                        'option',
-	                        { value: 0 },
-	                        '不可见'
-	                      )
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'input-group' },
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      '主线偏移'
-	                    ),
-	                    _react2['default'].createElement('input', {
-	                      onChange: this.props.onEditChange,
-	                      name: 'lineOffset',
-	                      className: 'form-control',
-	                      type: 'range',
-	                      min: -15,
-	                      max: 15,
-	                      defaultValue: this.props.lineOffset }),
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      this.props.lineOffset,
-	                      'px'
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'input-group' },
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      '需要同线辅助线'
-	                    ),
-	                    _react2['default'].createElement(
-	                      'select',
-	                      {
-	                        onChange: this.props.onEditChange,
-	                        name: 'line2Visible',
-	                        className: 'form-control',
-	                        defaultValue: this.props.line2Visible },
-	                      _react2['default'].createElement(
-	                        'option',
-	                        { value: 1 },
-	                        '是'
-	                      ),
-	                      _react2['default'].createElement(
-	                        'option',
-	                        { value: 0 },
-	                        '否'
-	                      )
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'input-group' },
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      '辅助偏移'
-	                    ),
-	                    _react2['default'].createElement('input', {
-	                      onChange: function (e) {
-	                        return _this.handleChange(e);
-	                      },
-	                      name: 'line2Offset',
-	                      className: 'form-control',
-	                      type: 'range',
-	                      min: -15,
-	                      max: 15,
-	                      defaultValue: this.props.line2Offset }),
-	                    _react2['default'].createElement(
-	                      'span',
-	                      { className: 'input-group-addon' },
-	                      this.props.line2Offset,
-	                      'px'
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'btn-group pull-left' },
-	                    _react2['default'].createElement(
-	                      'button',
-	                      {
-	                        onClick: this.props.onEditDelete,
-	                        type: 'button',
-	                        className: 'btn btn-danger' },
-	                      '删除此站点'
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'btn-group pull-right' },
-	                    _react2['default'].createElement('input', {
-	                      onClick: this.props.onEditConfirm,
-	                      type: 'submit',
-	                      className: 'btn btn-' + this.props.theme,
-	                      defaultValue: '确认' }),
-	                    _react2['default'].createElement(
-	                      'button',
-	                      {
-	                        onClick: this.props.onEditClose,
-	                        type: 'button',
-	                        className: 'btn btn-default' },
-	                      '取消'
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        );
-	      }
-	    }
-	  }]);
-
-	  return EditPanel;
-	})(_react2['default'].Component);
-
-	exports['default'] = EditPanel;
-	module.exports = exports['default'];
-
-/***/ },
-/* 237 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _commonAjax = __webpack_require__(230);
-
-	var _commonAjax2 = _interopRequireDefault(_commonAjax);
-
-	var EditPanel = (function (_React$Component) {
-	  _inherits(EditPanel, _React$Component);
-
-	  function EditPanel(props) {
-	    _classCallCheck(this, EditPanel);
-
-	    _get(Object.getPrototypeOf(EditPanel.prototype), 'constructor', this).call(this, props);
-	    this.state = {
-	      maxKey: 0
-	    };
-	  }
-
-	  _createClass(EditPanel, [{
-	    key: 'handleSubmit',
-	    value: function handleSubmit(e) {
-	      var _this = this;
-
-	      e.preventDefault();
-	      var l = e.pageX - e.clientX + 100;
-	      var t = e.pageY - e.clientY + 100;
-
-	      _commonAjax2['default'].maxKeyGet(function (max) {
-	        var addData = {
-	          left: l,
-	          top: t,
-	          uniquekey: max + 1,
-	          line: _this.refs.line.value,
-	          chsName: _this.refs.chsName.value,
-	          engName: _this.refs.engName.value,
-	          nodeType: _this.refs.nodeType.value
-	        };
-	        _commonAjax2['default'].stationPut(addData, function () {
-	          _this.props.updateStation('添加站点成功');
-	        });
-	      });
-	    }
-	  }, {
-	    key: 'handleClose',
-	    value: function handleClose(e) {
-	      this.props.onClose(e); //使用父组件的关闭方法
-	    }
-	  }, {
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {}
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this2 = this;
-
-	      if (!this.props.visible) {
-	        return null;
-	      } else {
-	        return _react2['default'].createElement(
-	          'div',
-	          { className: 'modal-layer add-panel-layer' },
-	          _react2['default'].createElement(
-	            'div',
-	            {
-	              className: 'add-panel panel panel-' + this.props.theme + ' fadein col-xs-12 col-sm-10 col-md-8 col-lg-6',
-	              onClick: function (e) {
-	                return e.stopPropagation();
-	              } },
-	            _react2['default'].createElement(
-	              'div',
-	              { className: 'panel-heading' },
-	              _react2['default'].createElement(
-	                'h3',
-	                { className: 'panel-title' },
-	                this.props.title
-	              )
-	            ),
-	            _react2['default'].createElement(
-	              'div',
-	              { className: 'panel-body' },
-	              _react2['default'].createElement(
-	                'form',
-	                { id: 'add', onSubmit: function (e) {
-	                    return _this2.handleSubmit(e);
-	                  } },
-	                _react2['default'].createElement(
-	                  'div',
-	                  { className: 'form-group' },
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-xs-6' },
-	                    _react2['default'].createElement(
-	                      'div',
-	                      { className: 'input-group' },
-	                      _react2['default'].createElement(
-	                        'span',
-	                        { className: 'input-group-addon' },
-	                        _react2['default'].createElement(
-	                          'strong',
-	                          null,
-	                          '线路'
-	                        )
-	                      ),
-	                      _react2['default'].createElement('input', {
-	                        className: 'form-control',
-	                        type: 'number',
-	                        ref: 'line',
-	                        min: 1,
-	                        max: 16,
-	                        defaultValue: 1,
-	                        required: true })
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-xs-6' },
-	                    _react2['default'].createElement(
-	                      'div',
-	                      { className: 'input-group' },
-	                      _react2['default'].createElement(
-	                        'span',
-	                        { className: 'input-group-addon' },
-	                        _react2['default'].createElement(
-	                          'strong',
-	                          null,
-	                          '中文名'
-	                        )
-	                      ),
-	                      _react2['default'].createElement('input', {
-
-	                        ref: 'chsName',
-	                        className: 'form-control',
-	                        type: 'text',
-	                        placeholder: '站点中文名称',
-	                        defaultValue: '上海',
-	                        required: true })
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-xs-6' },
-	                    _react2['default'].createElement(
-	                      'div',
-	                      { className: 'input-group' },
-	                      _react2['default'].createElement(
-	                        'span',
-	                        { className: 'input-group-addon' },
-	                        _react2['default'].createElement(
-	                          'strong',
-	                          null,
-	                          '英文名'
-	                        )
-	                      ),
-	                      _react2['default'].createElement('input', {
-	                        ref: 'engName',
-	                        className: 'form-control',
-	                        type: 'text',
-	                        placeholder: '站点英文名称',
-	                        defaultValue: 'SH',
-	                        required: true })
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'col-xs-6' },
-	                    _react2['default'].createElement(
-	                      'div',
-	                      { className: 'input-group' },
-	                      _react2['default'].createElement(
-	                        'span',
-	                        { className: 'input-group-addon' },
-	                        '站点类型'
-	                      ),
-	                      _react2['default'].createElement(
-	                        'select',
-	                        {
-	                          ref: 'nodeType',
-	                          className: 'form-control',
-	                          defaultValue: 'normal' },
-	                        _react2['default'].createElement(
-	                          'option',
-	                          { value: 'normal' },
-	                          '普通站点'
-	                        ),
-	                        _react2['default'].createElement(
-	                          'option',
-	                          { value: 'transfer' },
-	                          '换乘站点'
-	                        )
-	                      )
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'div',
-	                    { className: 'btn-group pull-right' },
-	                    _react2['default'].createElement('input', { onClick: function (e) {
-	                        return _this2.handleSubmit(e);
-	                      }, type: 'button', className: 'btn btn-' + this.props.theme, defaultValue: '确认' }),
-	                    _react2['default'].createElement(
-	                      'button',
-	                      { onClick: function (e) {
-	                          return _this2.handleClose(e);
-	                        }, type: 'button', className: 'btn btn-default' },
-	                      '取消'
-	                    )
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        );
-	      }
-	    }
-	  }]);
-
-	  return EditPanel;
-	})(_react2['default'].Component);
-
-	exports['default'] = EditPanel;
-	module.exports = exports['default'];
-
-/***/ },
-/* 238 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _commonAjax = __webpack_require__(230);
-
-	var _commonAjax2 = _interopRequireDefault(_commonAjax);
-
-	var _LineSelectJsx = __webpack_require__(239);
-
-	var _LineSelectJsx2 = _interopRequireDefault(_LineSelectJsx);
-
-	//时间管理
-
-	var TimePanel = (function (_React$Component) {
-	  _inherits(TimePanel, _React$Component);
-
-	  function TimePanel(props) {
-	    _classCallCheck(this, TimePanel);
-
-	    _get(Object.getPrototypeOf(TimePanel.prototype), 'constructor', this).call(this, props);
-	    this.state = {
-	      uniquekey_id: 0,
-	      next: 0,
-	      value: 0,
-	      selectedStartLine: 1,
-	      selectedEndLine: 1
-	    };
-	  }
-
-	  _createClass(TimePanel, [{
-	    key: 'handleChange',
-	    value: function handleChange(e) {
-	      this.setState(_defineProperty({}, e.target.name, e.target.value));
-	    }
-	  }, {
-	    key: 'handleSubmit',
-	    value: function handleSubmit(e) {
-	      var _this = this;
-
-	      var start = this.refs.start.value;
-	      var next = this.refs.next.value;
-	      var value = this.refs.value.value;
-
-	      _commonAjax2['default'].timePut({
-	        uniquekey_id: start,
-	        next: next,
-	        value: value
-	      }, function () {
-	        _this.props.updateTime('时间添加成功');
-	      });
-
-	      e.preventDefault();
-	    }
-	  }, {
-	    key: 'handleDeleteTime',
-	    value: function handleDeleteTime(e, start, end) {
-	      var _this2 = this;
-
-	      e.preventDefault();
-	      if (confirm('确定删除时间点么?')) {
-	        var data = { uniquekey_id: start, next: end };
-	        _commonAjax2['default'].timeDel(data, function () {
-	          _this2.props.updateTime('时间删除成功');
-	        });
-	      }
-	    }
-	  }, {
-	    key: 'initSelectOption',
-	    value: function initSelectOption() {
-	      var s = this.props.sData;
-	      var _sList = {};
-	      var _lList = [];
-	      //生成以线路号为键名的对象
-	      for (var k in s) {
-	        if (!_sList[s[k].line]) {
-	          _sList[s[k].line] = [];
-	          _lList.push(s[k].line); //加入线路数组中
-	        }
-	        _sList[s[k].line].push(s[k]); //将站点信息加入以线路为键名的对象中
-	      }
-
-	      this.lineList = _lList.map(function (_line) {
-	        return _react2['default'].createElement(
-	          'option',
-	          { key: _line, value: _line, className: 'line-font-' + _line },
-	          _line,
-	          '号线'
-	        );
-	      });
-
-	      this.lineStartStations = _sList[this.state.selectedStartLine].map(function (station) {
-	        return _react2['default'].createElement(
-	          'option',
-	          { key: station.uniquekey, value: station.uniquekey },
-	          station.chsName
-	        );
-	      });
-
-	      this.lineEndStations = _sList[this.state.selectedEndLine].map(function (station) {
-	        return _react2['default'].createElement(
-	          'option',
-	          { key: station.uniquekey, value: station.uniquekey },
-	          station.chsName
-	        );
-	      });
-	    }
-	  }, {
-	    key: 'initTimeList',
-	    value: function initTimeList() {
-	      var _this3 = this;
-
-	      var tData = this.props.tData;
-	      var sData = this.props.sData;
-	      var idMap = this.props.idMap;
-
-	      this.timeList = tData.map(function (t, index) {
-	        var startRow = sData[idMap[t[0]]]; //起始数据
-	        var nextRow = sData[idMap[t[1]]]; //邻站数据
-	        return _react2['default'].createElement(
-	          'tr',
-	          { key: index },
-	          _react2['default'].createElement(
-	            'td',
-	            { style: {
-	                textAlign: 'center'
-	              } },
-	            t[0]
-	          ),
-	          _react2['default'].createElement(
-	            'td',
-	            null,
-	            _react2['default'].createElement(
-	              'button',
-	              { className: 'btn btn-sm line-' + startRow.line },
-	              startRow.line
-	            ),
-	            _react2['default'].createElement(
-	              'span',
-	              null,
-	              startRow.chsName
-	            )
-	          ),
-	          _react2['default'].createElement(
-	            'td',
-	            { style: {
-	                textAlign: 'center'
-	              } },
-	            t[1]
-	          ),
-	          _react2['default'].createElement(
-	            'td',
-	            null,
-	            _react2['default'].createElement(
-	              'button',
-	              { className: 'btn btn-sm line-' + nextRow.line },
-	              nextRow.line
-	            ),
-	            _react2['default'].createElement(
-	              'span',
-	              null,
-	              nextRow.chsName
-	            )
-	          ),
-	          _react2['default'].createElement(
-	            'td',
-	            null,
-	            t[2],
-	            '分钟'
-	          ),
-	          _react2['default'].createElement(
-	            'td',
-	            null,
-	            _react2['default'].createElement(
-	              'button',
-	              { onClick: function (e) {
-	                  return _this3.handleDeleteTime(e, t[0], t[1]);
-	                }, className: 'btn btn-sm btn-danger' },
-	              '删除'
-	            )
-	          )
-	        );
-	      });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this4 = this;
-
-	      if (!this.props.visible) {
-	        return null;
-	      } else {
-	        this.initSelectOption();
-	        this.initTimeList();
-
-	        return _react2['default'].createElement(
-	          'div',
-	          { className: 'modal-layer add-panel-layer' },
-	          _react2['default'].createElement(
-	            'div',
-	            { onScroll: function (e) {
-	                return e.stopPropagation();
-	              }, className: 'panel-' + this.props.theme + ' add-panel panel time-panel fadein col-xs-12 col-sm-10 col-md-8 col-lg-6', onClick: function (e) {
-	                return e.stopPropagation();
-	              } },
-	            _react2['default'].createElement(
-	              'div',
-	              { className: 'panel-heading' },
-	              _react2['default'].createElement(
-	                'h3',
-	                { className: 'panel-title' },
-	                this.props.title
-	              )
-	            ),
-	            _react2['default'].createElement(
-	              'div',
-	              { className: 'row', style: {
-	                  marginTop: '10px'
-	                } },
-	              _react2['default'].createElement(
-	                'form',
-	                { onSubmit: function (e) {
-	                    return _this4.handleSubmit(e);
-	                  } },
-	                _react2['default'].createElement(
-	                  'div',
-	                  { className: 'col-xs-1' },
-	                  '起始'
-	                ),
-	                _react2['default'].createElement(
-	                  'div',
-	                  { className: 'col-xs-3' },
-	                  _react2['default'].createElement(
-	                    'select',
-	                    { name: 'selectedStartLine', onChange: function (e) {
-	                        return _this4.handleChange(e);
-	                      }, className: 'form-control', defaultValue: this.state.selectedStartLine },
-	                    this.lineList
-	                  ),
-	                  _react2['default'].createElement(
-	                    'select',
-	                    { ref: 'start', name: 'uniquekey_id', onChange: function (e) {
-	                        return _this4.handleChange(e);
-	                      }, className: 'form-control', defaultValue: this.lineStartStations[0].uniquekey },
-	                    this.lineStartStations
-	                  )
-	                ),
-	                _react2['default'].createElement(
-	                  'div',
-	                  { className: 'col-xs-1' },
-	                  '邻站'
-	                ),
-	                _react2['default'].createElement(
-	                  'div',
-	                  { className: 'col-xs-3' },
-	                  _react2['default'].createElement(
-	                    'select',
-	                    { name: 'selectedEndLine', onChange: function (e) {
-	                        return _this4.handleChange(e);
-	                      }, className: 'form-control', defaultValue: this.state.selectedEndLine },
-	                    this.lineList
-	                  ),
-	                  _react2['default'].createElement(
-	                    'select',
-	                    { ref: 'next', name: 'next', onChange: function (e) {
-	                        return _this4.handleChange(e);
-	                      }, className: 'form-control', defaultValue: this.lineEndStations[0].uniquekey },
-	                    this.lineEndStations
-	                  )
-	                ),
-	                _react2['default'].createElement(
-	                  'div',
-	                  { className: 'col-xs-2' },
-	                  _react2['default'].createElement('input', { ref: 'value', onChange: function (e) {
-	                      return _this4.handleChange(e);
-	                    }, type: 'number', name: 'value', className: 'form-control input-sm', placeholder: '时间', required: true })
-	                ),
-	                _react2['default'].createElement(
-	                  'div',
-	                  { className: 'col-xs-2' },
-	                  _react2['default'].createElement(
-	                    'button',
-	                    { type: 'submit', className: 'btn btn-info btn-sm' },
-	                    '插入'
-	                  )
-	                )
-	              )
-	            ),
-	            _react2['default'].createElement(
-	              'div',
-	              { className: 'panel-body', style: {
-	                  height: '80%',
-	                  overflow: 'auto'
-	                } },
-	              _react2['default'].createElement(
-	                'form',
-	                { method: 'post' },
-	                _react2['default'].createElement(
-	                  'table',
-	                  { className: 'table table-striped table-hover table-condensed table-bordered' },
-	                  _react2['default'].createElement(
-	                    'thead',
-	                    null,
-	                    _react2['default'].createElement(
-	                      'tr',
-	                      null,
-	                      _react2['default'].createElement(
-	                        'th',
-	                        null,
-	                        '起始号'
-	                      ),
-	                      _react2['default'].createElement(
-	                        'th',
-	                        null,
-	                        '起始名'
-	                      ),
-	                      _react2['default'].createElement(
-	                        'th',
-	                        null,
-	                        '邻站号'
-	                      ),
-	                      _react2['default'].createElement(
-	                        'th',
-	                        null,
-	                        '终止名'
-	                      ),
-	                      _react2['default'].createElement(
-	                        'th',
-	                        null,
-	                        '所需时间'
-	                      ),
-	                      _react2['default'].createElement(
-	                        'th',
-	                        null,
-	                        '操作'
-	                      )
-	                    )
-	                  ),
-	                  _react2['default'].createElement(
-	                    'tbody',
-	                    null,
-	                    this.timeList
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        );
-	      }
-	    }
-	  }]);
-
-	  return TimePanel;
-	})(_react2['default'].Component);
-
-	exports['default'] = TimePanel;
-	module.exports = exports['default'];
-
-/***/ },
-/* 239 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var LineSelect = (function (_React$Component) {
-	  _inherits(LineSelect, _React$Component);
-
-	  function LineSelect(props) {
-	    _classCallCheck(this, LineSelect);
-
-	    _get(Object.getPrototypeOf(LineSelect.prototype), 'constructor', this).call(this, props);
-	  }
-
-	  _createClass(LineSelect, [{
-	    key: 'handleChange',
-	    value: function handleChange(e) {
-	      this.props.onStationSelect(e.target.name, e.target.value);
-	      console.log(e.target.value);
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this = this;
-
-	      var lineStations = this.props.lineData.map(function (station) {
-
-	        return _react2['default'].createElement(
-	          'option',
-	          { key: station.uniquekey, value: station.uniquekey },
-	          station.chsName
-	        );
-	      });
-	      return _react2['default'].createElement(
-	        'select',
-	        { name: this.props.name, onChange: function (e) {
-	            return _this.handleChange(e);
-	          }, className: 'form-control', defaultValue: this.props.lineData[0].uniquekey },
-	        lineStations
-	      );
-	    }
-	  }]);
-
-	  return LineSelect;
-	})(_react2['default'].Component);
-
-	exports['default'] = LineSelect;
-	module.exports = exports['default'];
-
-/***/ },
-/* 240 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var Alert = (function (_React$Component) {
-	  _inherits(Alert, _React$Component);
-
-	  function Alert(props) {
-	    _classCallCheck(this, Alert);
-
-	    _get(Object.getPrototypeOf(Alert.prototype), 'constructor', this).call(this, props);
-	  }
-
-	  _createClass(Alert, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      var _this = this;
-
-	      var ele = document.getElementById('alert');
-	      ele.addEventListener('webkitAnimationEnd', function () {
-	        _this.props.onDismiss(); //执行父组件函数修改visible状态
-	      });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var ani = this.props.autoClose ? 'fadeout' : '';
-	      return _react2['default'].createElement(
-	        'div',
-	        { className: 'alert-layer', style: { display: this.props.visible ? 'block' : 'none' } },
-	        _react2['default'].createElement(
-	          'button',
-	          {
-	            id: 'alert',
-	            className: 'btn-' + this.props.theme + ' ' + ani + ' btn btn-lg alert-btn' },
-	          this.props.text
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Alert;
-	})(_react2['default'].Component);
-
-	exports['default'] = Alert;
-	module.exports = exports['default'];
-
-/***/ },
-/* 241 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i]; return arr2; } else { return Array.from(arr); } }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	var Dij = (function () {
-	  function Dij(n) {
-	    _classCallCheck(this, Dij);
-
-	    this.n = n; //n为顶点数量
-	    var M = [];
-	    var U = [];
-	    var P = [];
-	    //创建n*n二维数组M，创建个数为n的标记数组U，创建跳跃节点记录的数组P
-
-	    for (var i = 0; i < this.n; i++) {
-	      //M的每行为空数组,
-	      M[i] = [];
-	      P[i] = []; //P的每行为空数组
-	      M[i][i] = Infinity; //横纵下标相同的元素为Infinity
-	      U.push(false); //U标记数组的每个元素为false
-	    }
-
-	    this.M = M; //二维矩阵数组
-	    this.U = U; //标记数组
-	    this.P = P; //路径跃点数组
-	  }
-
-	  _createClass(Dij, [{
-	    key: 'initSource',
-	    value: function initSource(data) {
-	      //数据初始化 将data数据导入
-	      /*通过传入的数据判定顶点数量*/
-	      //将数据传入数组
-	      var _i = undefined,
-	          _j = undefined,
-	          _val = undefined;
-	      for (var k in data) {
-	        //从数据源[1,3,4]标识从第2个节点到第4个节点距离为4
-	        _i = data[k][0];
-	        _j = data[k][1];
-	        _val = data[k][2];
-	        if (_i >= this.n || _j >= this.n) {
-	          throw new Error('传参错误，输入的节点下标超过了顶点数量！');
-	        }
-	        this.M[_i][_j] = this.M[_j][_i] = _val; //赋值
-	      }
-	    }
-	  }, {
-	    key: 'setStart',
-	    value: function setStart(start, end) {
-	      //设定需要计算的起点与终点
-
-	      this.clonePath = this.P.concat([]); //需要克隆出Path数组以供多次计算，此为二维数据需进行深拷贝
-	      for (var _k = 0; _k < this.clonePath.length; _k++) {
-	        if (this.clonePath[_k].length == 0) continue; //已经是空数组的不用理会
-	        this.clonePath[_k] = [];
-	      }
-	      this.cloneUnion = this.U.concat([]); //需要克隆初始Union集合以供多次运算,此为一维数组
-
-	      this.opposite = false;
-	      if (end < start) {
-	        //如果终点比起点小 互换起终点查询
-	        var _ref = [end, start];
-	        start = _ref[0];
-	        end = _ref[1];
-	        this.opposite = true; //相反的变量标记
-	      }
-
-	      var _ref2 = [start, end];
-	      this.start = _ref2[0];
-	      this.end = _ref2[1];
-
-	      this.checkNum(); //验证合法性
-
-	      this.D = this.M[start]; // 缓存需要操作的行
-
-	      for (var i = 0; i < this.n; i++) {
-	        if (!this.D[i]) this.D[i] = Infinity;
-	      }
-
-	      this.D[start] = 0; //将起点到起点的距离设置为0
-	    }
-	  }, {
-	    key: 'checkNum',
-	    value: function checkNum() {
-	      //检查输入数字的合法性
-	      if (this.end >= this.n) {
-	        throw new Error('起点或终点参数错误  原因:超过节点数！');
-	      }
-	      if (this.start < 0) {
-	        throw new Error('起点或终点参数错误 原因:节点下标为负！');
-	      }
-	      if (typeof this.start == 'string' || typeof this.end == 'string') {
-	        throw new Error('传入的起点终点数据不为数字');
-	      }
-	    }
-	  }, {
-	    key: 'getMin',
-	    value: function getMin(start, end) {
-	      this.setStart(start, end);
-	      /*主循环开始-----*/
-	      for (var i = 0; i < this.n; i++) {
-	        var _minPreVal = Infinity;
-	        this.w = -1;
-
-	        for (var v = 0; v < this.n; v++) {
-	          //获取中继节点
-	          if (!this.cloneUnion[v] && this.D[v] < _minPreVal) {
-	            //该节点不在U集合中
-	            _minPreVal = this.D[v]; //更新最小值
-	            this.w = v; //更新中继点节点
-	          }
-	        }
-
-	        if (this.w == -1) {
-	          console.error('无' + (!this.opposite ? this.start : this.end) + '到' + (!this.opposite ? this.end : this.start) + '节点之间的路径!请重新查看参数');
-	          return {
-	            result: false,
-	            path: this.clonePath[this.end]
-	          }; //没有路径时的返回值
-	        }
-	        this.cloneUnion[this.w] = true; //更新节点标记
-	        this.clonePath[this.w].push(this.w); //更新终点路径节点
-
-	        // console.log(this.w+'索引 ',this.clonePath[this.w],_minPreVal);
-
-	        this.getNextNode(); //获取下一节点方法
-
-	        if (this.w == this.end) {
-	          //找到终点时
-	          return {
-	            result: this.D[this.end],
-	            path: this.opposite ? this.clonePath[this.end].reverse() : this.clonePath[this.end]
-	          }; //返回终点最小权值与到终点的路径 退出主循环
-	        };
-	      };
-	    }
-	  }, {
-	    key: 'getNextNode',
-	    value: function getNextNode() {
-	      for (var v = 0; v < this.n; v++) {
-	        //通过中继节点到下一节点
-	        if (!this.D[v]) {
-	          //忽略下一节点所在行中undefined的值
-	          continue;
-	        }
-
-	        if (!this.cloneUnion[v] && this.D[v] >= this.D[this.w] + this.M[this.w][v]) {
-	          //不在U集合中遍历  并且（源节点到中继点+中继点到下一节点的值)<=下一节点当前权值
-	          this.D[v] = this.D[this.w] + this.M[this.w][v]; //更新下一节点权值
-	          this.clonePath[v] = [].concat(_toConsumableArray(this.clonePath[this.w])); //更新下一节点的路径
-	        }
-	      }
-	    }
-	  }]);
-
-	  return Dij;
-	})();
-
-	exports['default'] = Dij;
-	module.exports = exports['default'];
-
-/***/ },
-/* 242 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _StationWrapper = __webpack_require__(243);
+	var _StationWrapper = __webpack_require__(230);
 
 	var _StationWrapper2 = _interopRequireDefault(_StationWrapper);
 
-	var _commonAlert = __webpack_require__(240);
+	var _commonAlert = __webpack_require__(238);
 
 	var _commonAlert2 = _interopRequireDefault(_commonAlert);
 
-	var _commonLineNumber = __webpack_require__(249);
+	var _commonLineNumber = __webpack_require__(239);
 
 	var _commonLineNumber2 = _interopRequireDefault(_commonLineNumber);
 
-	var _commonDij = __webpack_require__(241);
+	var _commonDij = __webpack_require__(240);
 
 	var _commonDij2 = _interopRequireDefault(_commonDij);
 
-	var _commonAjax = __webpack_require__(230);
+	var _commonAjax = __webpack_require__(231);
 
 	var _commonAjax2 = _interopRequireDefault(_commonAjax);
 
-	var _commonCommon = __webpack_require__(232);
+	var _commonCommon = __webpack_require__(234);
 
 	var Home = (function (_React$Component) {
 	  _inherits(Home, _React$Component);
@@ -27912,7 +25231,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 243 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27939,23 +25258,23 @@
 
 	//引入函数
 
-	var _commonAjax = __webpack_require__(230);
+	var _commonAjax = __webpack_require__(231);
 
 	var _commonAjax2 = _interopRequireDefault(_commonAjax);
 
-	var _commonCommon = __webpack_require__(232);
+	var _commonCommon = __webpack_require__(234);
 
 	//引入子组件
 
-	var _StationNodeJsx = __webpack_require__(244);
+	var _StationNodeJsx = __webpack_require__(235);
 
 	var _StationNodeJsx2 = _interopRequireDefault(_StationNodeJsx);
 
-	var _StationNameJsx = __webpack_require__(245);
+	var _StationNameJsx = __webpack_require__(236);
 
 	var _StationNameJsx2 = _interopRequireDefault(_StationNameJsx);
 
-	var _StationLineJsx = __webpack_require__(246);
+	var _StationLineJsx = __webpack_require__(237);
 
 	var _StationLineJsx2 = _interopRequireDefault(_StationLineJsx);
 
@@ -28082,7 +25401,284 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 244 */
+/* 231 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _minAjax = __webpack_require__(232);
+
+	var _minAjax2 = _interopRequireDefault(_minAjax);
+
+	var _confAjaxServer = __webpack_require__(233);
+
+	var _confAjaxServer2 = _interopRequireDefault(_confAjaxServer);
+
+	//ajax 请求对象包装
+
+	// const host = 'http://localhost:3000'; //后台请求地址
+
+	var ajax = {
+	    stationGet: function stationGet(fnDone) {
+	        //获得站点数据
+	        (0, _minAjax2['default'])({
+	            url: _confAjaxServer2['default'] + '/station',
+	            success: function success(result) {
+	                fnDone(result);
+	            }
+	        });
+	    },
+	    stationPost: function stationPost(data, fnDone) {
+	        //更新站点数据
+	        (0, _minAjax2['default'])({
+	            url: _confAjaxServer2['default'] + '/station',
+	            type: 'post',
+	            data: data,
+	            success: function success(result) {
+	                if (result == 'ok') {
+	                    fnDone();
+	                }
+	            }
+	        });
+	    },
+	    stationPut: function stationPut(data, fnDone) {
+	        (0, _minAjax2['default'])({
+	            url: _confAjaxServer2['default'] + '/station',
+	            type: 'put',
+	            data: data,
+	            success: function success(result) {
+	                if (result) {
+	                    fnDone(result);
+	                }
+	            }
+	        });
+	    },
+	    stationDel: function stationDel(id, fnDone) {
+	        (0, _minAjax2['default'])({
+	            url: _confAjaxServer2['default'] + '/station',
+	            type: 'delete',
+	            data: {
+	                id: id
+	            },
+	            success: function success(result) {
+	                if (result == 'ok') {
+	                    fnDone();
+	                }
+	            }
+	        });
+	    },
+	    maxKeyGet: function maxKeyGet(fnDone) {
+	        (0, _minAjax2['default'])({
+	            url: _confAjaxServer2['default'] + '/maxkey',
+	            type: 'get',
+	            success: function success(data) {
+	                if (data.result == 'ok') {
+	                    fnDone(data.maxkey);
+	                }
+	            }
+	        });
+	    },
+	    timeGet: function timeGet(fnDone) {
+	        (0, _minAjax2['default'])({
+	            url: _confAjaxServer2['default'] + '/time',
+	            type: 'get',
+	            success: function success(result) {
+	                fnDone(result);
+	            }
+	        });
+	    },
+
+	    timePut: function timePut(data, fnDone) {
+	        (0, _minAjax2['default'])({
+	            url: _confAjaxServer2['default'] + '/time',
+	            type: 'put',
+	            data: data,
+	            success: function success(result) {
+	                if (result) {
+	                    fnDone(result);
+	                }
+	            }
+	        });
+	    },
+	    timeDel: function timeDel(data, fnDone) {
+	        (0, _minAjax2['default'])({
+	            url: _confAjaxServer2['default'] + '/time',
+	            type: 'delete',
+	            data: data,
+	            success: function success(result) {
+	                if (result == 'ok') {
+	                    fnDone();
+	                }
+	            }
+	        });
+	    }
+
+	};
+
+	exports['default'] = ajax;
+	module.exports = exports['default'];
+
+/***/ },
+/* 232 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+	var minAjax = function minAjax(config) {
+	    if (!config.url) {
+	        throw new Error('请填写请求url地址！');
+	    }
+	    if (!config.success) {
+	        throw new Error('请填写回调函数！');
+	    }
+	    var option = {
+	        type: config.type || 'GET', //请求方式 默认为get
+	        data: reformatParams(config.data), //数据格式化为xmlHttp对象格式
+	        url: config.url, //请求地址
+	        success: config.success };
+
+	    //成功的回调
+	    var xmlHttp = getXmlHttpObj();
+
+	    xmlHttp.open(option.type.toUpperCase(), option.url, true); //发送数据
+	    if (option.type.toUpperCase() == 'GET') {
+	        xmlHttp.send(null);
+	    } else {
+	        xmlHttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); //设置头信息
+	        xmlHttp.send(option.data); //发送数据
+	    }
+	    xmlHttp.onreadystatechange = function () {
+	        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+	            var _resultValue = undefined;
+	            try {
+	                _resultValue = JSON.parse(xmlHttp.responseText); //如果能够json解析使用json
+	            } catch (e) {
+	                _resultValue = xmlHttp.responseText; //不能则返回普通文本字符串内容
+	            }
+	            option.success(_resultValue);
+	        }
+	    };
+	};
+
+	var reformatParams = function reformatParams(data) {
+	    var _arr = [];
+	    for (var k in data) {
+	        _arr.push(k + '=' + data[k]);
+	    }
+	    return _arr.join('&'); //格式化为name=lee&pwd=3的形式
+	};
+
+	var getXmlHttpObj = function getXmlHttpObj() {
+	    var xmlHttp = undefined;
+	    try {
+	        xmlHttp = new XMLHttpRequest();
+	    } catch (e) {
+	        try {
+	            xmlHttp = new ActiveXObject('Msxml2.XMLHTTP');
+	        } catch (e) {
+	            try {
+	                xmlHttp = new ActiveXObject('Microsoft.XMLHTTP');
+	            } catch (e) {
+	                alert('您的浏览器不支持ajax请求！');
+	            }
+	        }
+	    }
+	    return xmlHttp;
+	};
+
+	exports['default'] = minAjax;
+	module.exports = exports['default'];
+
+/***/ },
+/* 233 */
+/***/ function(module, exports) {
+
+	//ajax请求网址配置，局域网以及外网调试时修改此配置
+	'use strict';
+
+	module.exports = 'http://localhost:3000';
+
+/***/ },
+/* 234 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+	var calcAngel = function calcAngel(e) {
+	    var direction = arguments.length <= 1 || arguments[1] === undefined ? 'right' : arguments[1];
+
+	    var parentNode = e.target.parentNode; //获得父节点
+	    var nodeX = parentNode.offsetLeft;
+	    var nodeY = parentNode.offsetTop;
+	    var x = e.pageX;
+	    var y = e.pageY;
+	    var a = x - nodeX;
+	    var b = y - nodeY;
+	    //获得鼠标点相对于站点组件的横纵坐标
+	    var c = Math.hypot(a, b); //获得斜边值
+	    var sinVal = b / c; //得出余弦值
+	    var newAngel = Math.asin(sinVal) * 180 / Math.PI; //使用反正弦函数获得角度
+
+	    switch (direction) {//判断方向
+	        case 'right':
+	            x < nodeX ? newAngel = 180 - newAngel : newAngel;
+	            break;
+	        case 'left':
+	            newAngel = -newAngel;
+	            x > nodeX ? newAngel = 180 - newAngel : -newAngel;
+	            break;
+	    }
+	    for (var i = -2; i <= 6; i++) {
+	        //磁性吸附直角 -45*2 -45*1。。。-45*6
+	        Math.abs(newAngel / 45 - i) < 0.10 ? newAngel = i * 45 : newAngel;
+	    }
+	    return newAngel;
+	};
+
+	var findIndex = function findIndex(obj, target, child) {
+	    //寻找target元素是否存在于对象obj中,child参数用于二维对象下的某个下标值
+	    for (var k in obj) {
+	        if (child) {
+	            if (obj[k][child] == target) {
+	                return Number(k);
+	            }
+	        } else {
+	            if (obj[k] == target) {
+	                return Number(k);
+	            }
+	        }
+	    }
+	    return -1;
+	};
+
+	//浅比较两个对象属性相等函数
+	function compare(obj1, obj2) {
+	    for (var k in obj1) {
+	        if (typeof obj1[k] !== 'function' && typeof obj1[k] !== 'object') {
+	            if (obj1[k] !== obj2[k]) {
+	                return false;
+	            }
+	        }
+	    }
+	    return true;
+	}
+	exports['default'] = { calcAngel: calcAngel, findIndex: findIndex, compare: compare };
+	module.exports = exports['default'];
+
+/***/ },
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28162,7 +25758,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 245 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28245,7 +25841,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 246 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28342,9 +25938,74 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 247 */,
-/* 248 */,
-/* 249 */
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var Alert = (function (_React$Component) {
+	  _inherits(Alert, _React$Component);
+
+	  function Alert(props) {
+	    _classCallCheck(this, Alert);
+
+	    _get(Object.getPrototypeOf(Alert.prototype), 'constructor', this).call(this, props);
+	  }
+
+	  _createClass(Alert, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var _this = this;
+
+	      var ele = document.getElementById('alert');
+	      ele.addEventListener('webkitAnimationEnd', function () {
+	        _this.props.onDismiss(); //执行父组件函数修改visible状态
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var ani = this.props.autoClose ? 'fadeout' : '';
+	      return _react2['default'].createElement(
+	        'div',
+	        { className: 'alert-layer', style: { display: this.props.visible ? 'block' : 'none' } },
+	        _react2['default'].createElement(
+	          'button',
+	          {
+	            id: 'alert',
+	            className: 'btn-' + this.props.theme + ' ' + ani + ' btn btn-lg alert-btn' },
+	          this.props.text
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Alert;
+	})(_react2['default'].Component);
+
+	exports['default'] = Alert;
+	module.exports = exports['default'];
+
+/***/ },
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28400,6 +26061,180 @@
 	})(_react2['default'].Component);
 
 	exports['default'] = LineNumber;
+	module.exports = exports['default'];
+
+/***/ },
+/* 240 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i]; return arr2; } else { return Array.from(arr); } }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	var Dij = (function () {
+	  function Dij(n) {
+	    _classCallCheck(this, Dij);
+
+	    this.n = n; //n为顶点数量
+	    var M = [];
+	    var U = [];
+	    var P = [];
+	    //创建n*n二维数组M，创建个数为n的标记数组U，创建跳跃节点记录的数组P
+
+	    for (var i = 0; i < this.n; i++) {
+	      //M的每行为空数组,
+	      M[i] = [];
+	      P[i] = []; //P的每行为空数组
+	      M[i][i] = Infinity; //横纵下标相同的元素为Infinity
+	      U.push(false); //U标记数组的每个元素为false
+	    }
+
+	    this.M = M; //二维矩阵数组
+	    this.U = U; //标记数组
+	    this.P = P; //路径跃点数组
+	  }
+
+	  _createClass(Dij, [{
+	    key: 'initSource',
+	    value: function initSource(data) {
+	      //数据初始化 将data数据导入
+	      /*通过传入的数据判定顶点数量*/
+	      //将数据传入数组
+	      var _i = undefined,
+	          _j = undefined,
+	          _val = undefined;
+	      for (var k in data) {
+	        //从数据源[1,3,4]标识从第2个节点到第4个节点距离为4
+	        _i = data[k][0];
+	        _j = data[k][1];
+	        _val = data[k][2];
+	        if (_i >= this.n || _j >= this.n) {
+	          throw new Error('传参错误，输入的节点下标超过了顶点数量！');
+	        }
+	        this.M[_i][_j] = this.M[_j][_i] = _val; //赋值
+	      }
+	    }
+	  }, {
+	    key: 'setStart',
+	    value: function setStart(start, end) {
+	      //设定需要计算的起点与终点
+
+	      this.clonePath = this.P.concat([]); //需要克隆出Path数组以供多次计算，此为二维数据需进行深拷贝
+	      for (var _k = 0; _k < this.clonePath.length; _k++) {
+	        if (this.clonePath[_k].length == 0) continue; //已经是空数组的不用理会
+	        this.clonePath[_k] = [];
+	      }
+	      this.cloneUnion = this.U.concat([]); //需要克隆初始Union集合以供多次运算,此为一维数组
+
+	      this.opposite = false;
+	      if (end < start) {
+	        //如果终点比起点小 互换起终点查询
+	        var _ref = [end, start];
+	        start = _ref[0];
+	        end = _ref[1];
+	        this.opposite = true; //相反的变量标记
+	      }
+
+	      var _ref2 = [start, end];
+	      this.start = _ref2[0];
+	      this.end = _ref2[1];
+
+	      this.checkNum(); //验证合法性
+
+	      this.D = this.M[start]; // 缓存需要操作的行
+
+	      for (var i = 0; i < this.n; i++) {
+	        if (!this.D[i]) this.D[i] = Infinity;
+	      }
+
+	      this.D[start] = 0; //将起点到起点的距离设置为0
+	    }
+	  }, {
+	    key: 'checkNum',
+	    value: function checkNum() {
+	      //检查输入数字的合法性
+	      if (this.end >= this.n) {
+	        throw new Error('起点或终点参数错误  原因:超过节点数！');
+	      }
+	      if (this.start < 0) {
+	        throw new Error('起点或终点参数错误 原因:节点下标为负！');
+	      }
+	      if (typeof this.start == 'string' || typeof this.end == 'string') {
+	        throw new Error('传入的起点终点数据不为数字');
+	      }
+	    }
+	  }, {
+	    key: 'getMin',
+	    value: function getMin(start, end) {
+	      this.setStart(start, end);
+	      /*主循环开始-----*/
+	      for (var i = 0; i < this.n; i++) {
+	        var _minPreVal = Infinity;
+	        this.w = -1;
+
+	        for (var v = 0; v < this.n; v++) {
+	          //获取中继节点
+	          if (!this.cloneUnion[v] && this.D[v] < _minPreVal) {
+	            //该节点不在U集合中
+	            _minPreVal = this.D[v]; //更新最小值
+	            this.w = v; //更新中继点节点
+	          }
+	        }
+
+	        if (this.w == -1) {
+	          console.error('无' + (!this.opposite ? this.start : this.end) + '到' + (!this.opposite ? this.end : this.start) + '节点之间的路径!请重新查看参数');
+	          return {
+	            result: false,
+	            path: this.clonePath[this.end]
+	          }; //没有路径时的返回值
+	        }
+	        this.cloneUnion[this.w] = true; //更新节点标记
+	        this.clonePath[this.w].push(this.w); //更新终点路径节点
+
+	        // console.log(this.w+'索引 ',this.clonePath[this.w],_minPreVal);
+
+	        this.getNextNode(); //获取下一节点方法
+
+	        if (this.w == this.end) {
+	          //找到终点时
+	          return {
+	            result: this.D[this.end],
+	            path: this.opposite ? this.clonePath[this.end].reverse() : this.clonePath[this.end]
+	          }; //返回终点最小权值与到终点的路径 退出主循环
+	        };
+	      };
+	    }
+	  }, {
+	    key: 'getNextNode',
+	    value: function getNextNode() {
+	      for (var v = 0; v < this.n; v++) {
+	        //通过中继节点到下一节点
+	        if (!this.D[v]) {
+	          //忽略下一节点所在行中undefined的值
+	          continue;
+	        }
+
+	        if (!this.cloneUnion[v] && this.D[v] >= this.D[this.w] + this.M[this.w][v]) {
+	          //不在U集合中遍历  并且（源节点到中继点+中继点到下一节点的值)<=下一节点当前权值
+	          this.D[v] = this.D[this.w] + this.M[this.w][v]; //更新下一节点权值
+	          this.clonePath[v] = [].concat(_toConsumableArray(this.clonePath[this.w])); //更新下一节点的路径
+	        }
+	      }
+	    }
+	  }]);
+
+	  return Dij;
+	})();
+
+	exports['default'] = Dij;
 	module.exports = exports['default'];
 
 /***/ }
