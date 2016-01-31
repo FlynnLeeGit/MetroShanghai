@@ -1,9 +1,9 @@
 import minAjax from './minAjax';
-
+import host from '../../../conf/ajaxServer';
 
 //ajax 请求对象包装
 
-const host = 'http://localhost:3000'; //后台请求地址
+// const host = 'http://localhost:3000'; //后台请求地址
 
 const ajax = {
     stationGet(fnDone) { //获得站点数据
