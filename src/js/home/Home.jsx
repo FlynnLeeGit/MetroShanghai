@@ -95,9 +95,6 @@ class Home extends React.Component {
         }
 
         render() {
-          if (this.state.loading) {
-            return <h1>渲染中...</h1>
-          } else {
             let stations = this.state.stationsData.map((station, index) => {
               return <StationWrapper
                 key={station.id} index={index}
@@ -137,7 +134,6 @@ class Home extends React.Component {
                 </div>
               </div>
             );
-          }
         }
       }
 

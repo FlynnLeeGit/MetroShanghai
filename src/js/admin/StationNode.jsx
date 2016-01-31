@@ -11,14 +11,17 @@ class StationNode extends React.Component {
 
   render() {
     let stationNodeClass = `s-node s-${this.props.nodeType=='normal'?'round':'ellipse'} line-node-${this.props.line}`;
+      // let transformStyle=`translate(-50%,-50%) rotate(${this.props.nodeAngel}deg)`;
+      let transformStyle=`rotate(${this.props.nodeAngel}deg)`;
     return (
+
+
       <div
-        ref='node'
-        className={stationNodeClass}
+          className={stationNodeClass}
         style={{
           borderColor:this.props.nodeType=='transfer'?'#000':'',
-          transform:`translate(-50%,-50%) rotate(${this.props.nodeAngel}deg)`,
-          WebkitTransform:`translate(-50%,-50%) rotate(${this.props.nodeAngel}deg)`,
+          transform:transformStyle,
+          WebkitTransform:transformStyle,
           zIndex:this.props.pathNode||this.props.selected?4:3,
         }}
         onClick={this.props.handleClick}

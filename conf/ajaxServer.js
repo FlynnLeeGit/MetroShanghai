@@ -1,2 +1,2 @@
 //ajax请求网址配置，局域网以及外网调试时修改此配置
-module.exports='http://localhost:3000';
+module.exports='http://192.168.2.101:3000';

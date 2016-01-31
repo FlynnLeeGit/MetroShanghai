@@ -1,11 +1,15 @@
-var orm=require('orm');
-var opts=require('../conf/setting');
-var db=orm.connect(opts,function(err,db){
+import orm from 'orm';
+
+import opts from '../conf/dbSetting';  //引入数据库配置
+
+
+
+const db=orm.connect(opts,(err,db)=>{
 	if (err) throw err;
 	return db;
 })
 
-var model={};
+const model={};
 
 model.station=db.define('station',{
 	uniquekey:Number,
@@ -56,4 +60,4 @@ model.transfer.hasOne('uniquekey',model.station,{
 	reverse:'transfer'
 })
 
-module.exports=model;
+export default model;
