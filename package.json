@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "babel-node server.js",
     "dev": "webpack-dev-server --progress --colors --hot --inline --dev",
     "hotbuild": "webpack --progress --colors --profile --watch",
     "build": "webpack --progress --colors --profile --minify"
@@ -14,14 +14,15 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer-loader": "3.1.0",
-    "babel-core": "5.8.25",
+    "babel-core": "5.8.34",
     "babel-loader": "5.3.2",
     "body-parser": "1.13.2",
     "css-loader": "0.8.0",
+    "ejs": "^2.4.1",
     "express": "4.13.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "0.8.4",
     "html-webpack-plugin": "2.7.1",
-    "jade": "1.11.0",
     "jsx-loader": "0.13.2",
     "morgan": "1.6.1",
     "mysql": "2.10.2",

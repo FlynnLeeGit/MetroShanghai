@@ -1,12 +1,12 @@
 var webpack = require('webpack');
 var path = require('path');
 var OpenBrowserWebpackPlugin = require('open-browser-webpack-plugin');
-
+var ExtractTextPlugin=require('extract-text-webpack-plugin');
 var args = require('./env.js');
 
 
 var config = {
-    entry: './entry.js',
+    entry: './test.js',
 
     output: {
         path: path.join(__dirname, 'build'),
@@ -17,10 +17,11 @@ var config = {
         //noParse:[/react/,/react-dom/],  //会直接打包而进行扫文件解析 省去了时间 注意此项会忽略此包依赖
         loaders: [{
             test: /\.css$/,
-            loader: 'style!css!autoprefixer'
+            loader:'style!css!autoprefixer',
         }, {
             test: /\.scss$/,
-            loader: 'style!css!autoprefixer!sass'
+            loader: ExtractTextPlugin.extract('style-loader','css!autoprefixer!sass'),
+            // loader: 'style!css!autoprefixer!sass',
         }, {
             test: /\.png$/,
             loader: 'url?limit=8000' //url loader将尺寸小于8k图片转为base64
@@ -33,7 +34,9 @@ var config = {
             loader: 'url'
         }]
     },
-    plugins: [],
+    plugins: [
+      new ExtractTextPlugin('style.css'),
+    ],
 
     resolve:{
         extensions:['','.js','.jsx','.json']  //可以省略的require后缀
