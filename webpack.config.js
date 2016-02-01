@@ -6,8 +6,8 @@ var args = require('./env.js');
 
 
 var config = {
-    entry: './test.js',
-
+    entry: './entry.js',
+    devtool:'source-map',  //使用Chrome中的source-map定位错误
     output: {
         path: path.join(__dirname, 'build'),
         publicPath: '/build/', //公共文件目录
@@ -17,7 +17,8 @@ var config = {
         //noParse:[/react/,/react-dom/],  //会直接打包而进行扫文件解析 省去了时间 注意此项会忽略此包依赖
         loaders: [{
             test: /\.css$/,
-            loader:'style!css!autoprefixer',
+            loader: ExtractTextPlugin.extract('style-loader','css!autoprefixer'),
+            // loader:'style!css!autoprefixer',
         }, {
             test: /\.scss$/,
             loader: ExtractTextPlugin.extract('style-loader','css!autoprefixer!sass'),

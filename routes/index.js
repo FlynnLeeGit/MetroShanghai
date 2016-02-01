@@ -1,12 +1,6 @@
 import express from 'express';
 import model from '../model/db';
-import React from 'react';
-import {
-  renderToString
-}
-from 'react-dom/server';
 
-import createClassHome from '../s/Home.jsx';
 const router = express.Router();
 
 router.all('*', (req, res, next) => {
@@ -139,19 +133,11 @@ router.route('/time')
 })
 
 
-let reactServerHtml;
-model.station.find(['line', 'A'], (err, stationsData) => {
-  if (err) throw err;
-  let Home = createClassHome(stationsData);
-  reactServerHtml = renderToString( < Home / > );
-})
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {
     title: 'Metro Shanghai',
-    reactServerHtml: reactServerHtml,
-
   });
 });
 

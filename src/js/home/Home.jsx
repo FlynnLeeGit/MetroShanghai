@@ -88,8 +88,6 @@ class Home extends React.Component {
               })
             }
           }else{
-
-
           this.setState({lastSelected: this.state.nowSelected, nowSelected: endKey,path:[]});
           }
         }
