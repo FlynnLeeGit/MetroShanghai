@@ -22,7 +22,7 @@
      /*通过传入的数据判定顶点数量*/
      //将数据传入数组
      let _i, _j, _val;
-     for (let k in data) {
+     for (let k=0;k<data.length;k++) {
        [_i, _j, _val] = [data[k][0], data[k][1], data[k][2]]; //从数据源[1,3,4]标识从第2个节点到第4个节点距离为4
        if (_i >= this.n || _j >= this.n) {
          throw new Error('传参错误，输入的节点下标超过了顶点数量！');

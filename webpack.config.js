@@ -1,8 +1,9 @@
 var webpack = require('webpack');
 var path = require('path');
-var OpenBrowserWebpackPlugin = require('open-browser-webpack-plugin');
-var ExtractTextPlugin=require('extract-text-webpack-plugin');
-var args = require('./env.js');
+var args = require('./env.js');  //小脚本 用于读取node参数 返回参数键值对象
+
+var OpenBrowserWebpackPlugin = require('open-browser-webpack-plugin');  //自动打开网页插件
+var ExtractTextPlugin=require('extract-text-webpack-plugin');  //分离css插件
 
 
 var config = {
@@ -17,11 +18,11 @@ var config = {
         //noParse:[/react/,/react-dom/],  //会直接打包而进行扫文件解析 省去了时间 注意此项会忽略此包依赖
         loaders: [{
             test: /\.css$/,
-            loader: ExtractTextPlugin.extract('style-loader','css!autoprefixer'),
+            loader: ExtractTextPlugin.extract('style-loader','css!autoprefixer'),   //css文件分离
             // loader:'style!css!autoprefixer',
         }, {
             test: /\.scss$/,
-            loader: ExtractTextPlugin.extract('style-loader','css!autoprefixer!sass'),
+            loader: ExtractTextPlugin.extract('style-loader','css!autoprefixer!sass'),  //scss文件编译为css分离
             // loader: 'style!css!autoprefixer!sass',
         }, {
             test: /\.png$/,
@@ -36,7 +37,7 @@ var config = {
         }]
     },
     plugins: [
-      new ExtractTextPlugin('style.css'),
+      new ExtractTextPlugin('style.css'),  //将所有css文件合并为style.css
     ],
 
     resolve:{

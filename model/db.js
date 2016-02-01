@@ -46,18 +46,11 @@ model.time=db.define('time',{
 	next:Number,
 	value:Number,
 })
-model.transfer=db.define('transfer',{
-  uniquekey_id:Number,
-	relation_id:Number,
-})
+
 model.time.hasOne('uniquekey',model.station,{  //拥有者的字段为key,被拥有的字段为key_id
 	autoFetch:true,     //被拥有的表查询是加入一个键名key扩展对象
-	reverse:'time',   //此项填写后拥有者的表查询加入一个timeData键名的扩展数组
+	//reverse:'time',   //此项填写后拥有者的表查询加入一个timeData键名的扩展数组
 })
 
-model.transfer.hasOne('uniquekey',model.station,{
-	autoFetch:true,
-	reverse:'transfer'
-})
 
 export default model;
